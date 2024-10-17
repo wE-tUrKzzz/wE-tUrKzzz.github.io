@@ -3,7 +3,6 @@
     background-color: #383938;
 }
 .nav-link {
-    font-family: 'Poppins', sans-serif;
     color: rgb(135, 126, 126);
 }
 
@@ -13,7 +12,6 @@
 
 .myDescription1{
     margin-right: 30px;
-    font-family: 'Poppins', sans-serif;
     color: rgb(109, 98, 98);
     font-size: 80px;
 }
