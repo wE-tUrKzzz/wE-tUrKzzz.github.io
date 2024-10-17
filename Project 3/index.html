@@ -1,0 +1,223 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Project 3</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="dir/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600,700&display=swap" rel="stylesheet">
+    <style>
+        .image-container {
+            position: relative;
+            display: inline-block;
+        }
+
+        .my-description-home {
+            margin-right: 30px;
+            font-family: 'Poppins', sans-serif;
+            color: rgb(109, 98, 98);
+            font-size: 50px;
+            text-align: center;
+        }
+
+        .screenshots {
+            font-family: 'Poppins', sans-serif;
+            color: rgb(152, 138, 138);
+            font-size: 30px;
+            margin-top: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body id="body">
+    <!-- Navbar -->
+    <nav class="navbar bg-body-secondary">
+        <div class="container-fluid">
+            <a class="navbar-brand justify-content-center d-block text-center"
+                style="font-family:'Poppins', sans-serif; color: rgb(135, 126, 126);font-size: 2.5vw;;"><b>MY GENSHIN CHARACTERS</b></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+                aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel" style="color: rgb(135, 126, 126);">Genshin
+                        Impact Characters</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="DPS.html">My DPS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Supports.html">My Supports</a>
+                        </li>
+                        <li class="nav-item">
+                            <style>
+                                html {
+                                    transition: background-color 0.3s ease, color 0.3s ease;
+                                }
+                            </style>
+                            <div class="form-check form-switch">
+                                <input class="form-check-input" type="checkbox" id="darkModeSwitch" checked
+                                    aria-label="Switch between light and dark mode" data-bs-toggle="tooltip"
+                                    data-bs-placement="top" title="Switch between light and dark mode"
+                                    onchange="changeMode()">
+                                <label class="form-check-label" for="darkModeSwitch">Light Mode</label>
+                            </div>
+
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- Title -->
+    <div class="container">
+        <div class="row mt-5">
+            <div class="col p-3">
+                <div class="my-description-home"><b> A site to show Genshin and my Characters </b>
+                </div>
+                <div class="screenshots"><b> Screenshots: </b></div>
+            </div>
+        </div>
+    </div>
+    <div class="container-flex" id="image-container">
+        <!-- Images will be dynamically inserted here by JavaScript -->
+    </div>
+
+    <!-- Footer -->
+    <div class="container-fluid" id="footer">
+        <div class="row">
+            <div class="col p-3" style="background-color: rgb(56, 57, 56);">
+                <div class="footer text-center"
+                    style="color: white; font-size: 30px; font-family: Poppins, sans-serif;">
+                    Website is just a project. All Rights Reserved.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    </div>
+    <script>
+        const imagePaths = [
+            "dir/img/bg1.png",
+            "dir/img/bg2.png",
+            "dir/img/bg3.png",
+            "dir/img/bg4.png",
+            "dir/img/bg5.png",
+            "dir/img/bg6.png"
+        ];
+
+        // Style of Carousel
+        const container = document.getElementById('image-container');
+
+        // Create Carousel
+        const carouselDiv = document.createElement('div');
+        carouselDiv.classList.add('carousel', 'slide');
+        carouselDiv.setAttribute('data-bs-ride', 'carousel');
+        carouselDiv.setAttribute('id', 'carouselExample');
+
+        // Inner carousel item div
+        const carouselInner = document.createElement('div');
+        carouselInner.classList.add('carousel-inner');
+
+        // Loop through images to create carousel items
+        imagePaths.forEach((src, index) => {
+            const itemDiv = document.createElement('div');
+            itemDiv.classList.add('carousel-item');
+
+            if (index === 0) {
+                itemDiv.classList.add('active'); // First item is active
+
+                const img = document.createElement('img');
+                img.src = src;
+                img.classList.add('d-block', 'w-100'); // Full width
+                img.alt = `Image ${index + 1}`;
+                img.style.height = 'auto';
+                img.style.maxHeight = '900px';
+                img.style.border = '5px solid #000';
+                img.style.marginBottom = '10px';
+
+                itemDiv.appendChild(img);
+            } else {
+                const img = document.createElement('img');
+                img.src = src;
+                img.classList.add('d-block', 'w-100'); // Full width
+                img.alt = `Image ${index + 1}`;
+                img.style.height = 'auto';
+                img.style.maxHeight = '900px';
+                img.style.border = '5px solid #000';
+
+                itemDiv.appendChild(img);
+            }
+
+            carouselInner.appendChild(itemDiv);
+        });
+
+        // Append carousel inner to carousel div
+        carouselDiv.appendChild(carouselInner);
+
+        // Optional: Add controls for navigating the carousel
+        const prevControl = document.createElement('button');
+        prevControl.classList.add('carousel-control-prev');
+        prevControl.setAttribute('type', 'button');
+        prevControl.setAttribute('data-bs-target', '#carouselExample');
+        prevControl.setAttribute('data-bs-slide', 'prev');
+        prevControl.innerHTML = '<span class="carousel-control-prev-icon" aria-hidden="true"></span>';
+        prevControl.setAttribute('aria-label', 'Previous');
+        carouselDiv.appendChild(prevControl);
+
+        const nextControl = document.createElement('button');
+        nextControl.classList.add('carousel-control-next');
+        nextControl.setAttribute('type', 'button');
+        nextControl.setAttribute('data-bs-target', '#carouselExample');
+        nextControl.setAttribute('data-bs-slide', 'next');
+        nextControl.innerHTML = '<span class="carousel-control-next-icon" aria-hidden="true"></span>';
+        nextControl.setAttribute('aria-label', 'Next');
+        carouselDiv.appendChild(nextControl);
+
+        // Append the carousel to the container
+        container.appendChild(carouselDiv);
+
+        // Smooth transition effect using CSS
+        const style = document.createElement('style');
+        style.innerHTML = `
+    .carousel-item {
+        transition: transform 0.5s ease, opacity 0.5s ease;
+    }
+
+    .carousel-inner {
+        overflow: hidden;
+    }
+`;
+        document.head.appendChild(style);
+
+        // Dark mode
+        var colorMode = "light";
+
+        function changeMode() {
+            var bodyElement = document.getElementById("body");
+            var labelElement = document.querySelector(".form-check-label");
+            colorMode = colorMode == "dark" ? "light" : "dark";
+            bodyElement.setAttribute("data-bs-theme", colorMode);
+            labelElement.textContent = colorMode == "dark" ? "Dark Mode" : "Light Mode";
+        }
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js"></script>
+</body>
+
+</html>
