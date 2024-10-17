@@ -1,0 +1,220 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Project 3</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="dir/css/style.css">
+</head>
+
+<body id="body">
+    <!-- Navbar -->
+    <nav class="navbar bg-body-secondary">
+        <div class="container-fluid">
+            <a class="navbar-brand mx-auto d-block text-center"
+                style="font-family:'Poppins', sans-serif; color: rgb(135, 126, 126);font-size: 2.5vw;"><b>MY GENSHIN
+                    CHARACTERS</b></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+                aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel" style="color: rgb(135, 126, 126);">Genshin
+                        Impact Characters</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="DPS.html">My DPS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Supports.html">My Supports</a>
+                        </li>
+                        <li class="nav-item">
+                            <div class="form-check form-switch">
+                                <input class="form-check-input" type="checkbox" id="darkModeSwitch" checked
+                                    aria-label="Switch between light and dark mode" data-bs-toggle="tooltip"
+                                    data-bs-placement="top" title="Switch between light and dark mode"
+                                    onchange="changeMode()">
+                                <label class="form-check-label" for="darkModeSwitch">Light Mode</label>
+                            </div>
+
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Title  -->
+    <div class="container">
+        <div class="row mt-4">
+            <div class="col">
+                <div class="myDescription1"><b>DPS</b></div>
+            </div>
+        </div>
+        <div id="cardContainer" class="row my-5"></div>
+    </div>
+
+    <!-- Footer -->
+    <div class="container-fluid" id="footer">
+        <div class="row">
+            <div class="col p-3" style="background-color: rgb(56, 57, 56);">
+                <div class="footer text-center"
+                    style="color: white; font-size: 30px; font-family: Poppins, sans-serif;">
+                    Website is just a project. All Rights Reserved.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    </div>
+    <script>
+
+        // Arrays
+        var elementColors = {
+            "Geo": "#debd6c",
+            "Pyro": "#EC4923",
+            "Cryo": "#4682B4",
+            "Electro": "#945dc4",
+            "Anemo": "#359697",
+            "Hydro": "#1E90FF",
+            "Dendro": "#608a00"
+        };
+
+        var characters = [{
+                name: "Wriothesley",
+                location: "Fontaine",
+                element: "Cryo",
+                imgSrc: "dir/img/dps/Wriothesley.png"
+            },
+            {
+                name: "Hutao",
+                location: "Liyue",
+                element: "Pyro",
+                imgSrc: "dir/img/dps/Hutao.png"
+            },
+            {
+                name: "Tighnari",
+                location: "Sumeru",
+                element: "Dendro",
+                imgSrc: "dir/img/dps/Tighnari.png"
+            },
+            {
+                name: "Raiden Shogun",
+                location: "Inazuma",
+                element: "Electro",
+                imgSrc: "dir/img/dps/Raiden.png"
+            },
+            {
+                name: "Kinich",
+                location: "Natlan",
+                element: "Dendro",
+                imgSrc: "dir/img/dps/Kinich.png"
+            },
+            {
+                name: "Arataki Itto",
+                location: "Inazuma",
+                element: "Geo",
+                imgSrc: "dir/img/dps/Itto.png"
+            },
+            {
+                name: "Furina",
+                location: "Fontaine",
+                element: "Hydro",
+                imgSrc: "dir/img/dps/Furina.png"
+            },
+            {
+                name: "Keqing",
+                location: "Liyue",
+                element: "Electro",
+                imgSrc: "dir/img/dps/Keqing.png"
+            }
+        ];
+
+        var myContainer = document.getElementById("cardContainer");
+
+        characters.forEach((character, i) => {
+            const elementColor = elementColors[character.element] || "#FFFFFF";
+            myContainer.innerHTML += `
+        <div class="col-xl-3 col-md-4 col-sm-6 col-12">
+            <div class="card my-3" style="background-color: ${elementColor}; border: 2px solid #383938;" 
+                id="c${i}" 
+                onmouseenter="addShadow('c${i}'); zoomIn('c${i}')" 
+                onmouseleave="removeShadow('c${i}'); zoomOut('c${i}')">
+                <img src="${character.imgSrc}" class="card-img-top" style="height: 350px; object-fit: cover;">
+                <div class="card-body">
+                    <!-- Collapse button -->
+                    <button class="btn" style="background-color: black; color: white;" onclick="expandContent(${i})">
+                        Details
+                    </button>
+                    <!-- Collapsible content -->
+                    <div id="collapseDetails${i}" class="collapse">
+                        <div class="card" style="width: 14rem;">
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item"><b>Name:</b> ${character.name}</li>
+                                <li class="list-group-item"><b>Region:</b> ${character.location}</li>
+                                <li class="list-group-item"><b>Element:</b> ${character.element}</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>`;
+        });
+
+        // Expand
+        function expandContent(index) {
+            var collapseElement = document.getElementById(`collapseDetails${index}`);
+            var collapse = new bootstrap.Collapse(collapseElement, {
+                toggle: true
+            });
+        }
+        // Shadowwwwwwwww
+        function addShadow(id) {
+            document.getElementById(id).classList.add("shadow");
+        }
+        // No Shadowwwwwwwww
+        function removeShadow(id) {
+            document.getElementById(id).classList.remove("shadow");
+        }
+        // zoom-in
+        function zoomIn(cardId) {
+            const card = document.getElementById(cardId);
+            card.style.transform = "scale(1.05)";
+        }
+
+        // zoom-out
+        function zoomOut(cardId) {
+            const card = document.getElementById(cardId);
+            card.style.transform = "scale(1)";
+        }
+
+        // Dark mode
+        var colorMode = "light";
+
+        function changeMode() {
+            var bodyElement = document.getElementById("body");
+            var labelElement = document.querySelector(".form-check-label");
+            colorMode = colorMode == "dark" ? "light" : "dark";
+            bodyElement.setAttribute("data-bs-theme", colorMode);
+            labelElement.textContent = colorMode == "dark" ? "Dark Mode" : "Light Mode";
+        }
+    </script>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
