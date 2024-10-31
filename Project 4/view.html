@@ -62,43 +62,46 @@
     <!-- Character Image -->
     <div class="container">
         <div class="row mt-5">
-            <div class="col">
-                <div class="mx-auto" style="max-width: 400px; background-color: lightgray; border-radius: 200px" id="img-container">
+            <div class="col text-center">
+                <div class="mx-auto" style="max-width: 400px; border-radius: 200px" id="img-container">
                     <img id="img" src="" class="character-image">
-                </div>
-            </div>
-        </div>
-
-    <!-- Character Name -->
-        <div class="row">
-            <div class="col text-center d-flex justify-content-center">
-                <div class="rounded-5 card py-2 px-4 mx-auto" id="name-container" style="margin-top: 30px; margin-bottom: 20px; font-size: 40px;"></div>
-            </div>
-        </div>
-
-    <!-- Centered Attributes -->
-        <div class="row mt-3">
-            <div class="col d-flex justify-content-center">
-                <div class="card p-4 rounded-5" style="width: 400px; font-size: 25px; margin-bottom: 40px;">
-                    <div><b>Status: </b><span id="character-status"></span></div>
-                    <div><b>Species: </b><span id="character-species"></span></div>
-                    <div><b>Origin: </b><span id="character-origin"></span></div>
-                    <div><b>Gender: </b><span id="character-gender"></span></div>
                 </div>
             </div>
         </div>
     </div>
 
+
+    <!-- Character Name -->
+    <div class="row">
+        <div class="col text-center d-flex justify-content-center">
+            <div class="rounded-5 card py-2 px-4 mx-auto" id="name-container"
+                style="margin-top: 30px; margin-bottom: 20px; font-size: 40px;"></div>
+        </div>
+    </div>
+
+    <!-- Centered Attributes -->
+    <div class="row mt-3">
+        <div class="col d-flex justify-content-center">
+            <div class="card p-4 rounded-5" style="width: 400px; font-size: 25px; margin-bottom: 40px;">
+                <div><b>Status: </b><span id="character-status"></span></div>
+                <div><b>Species: </b><span id="character-species"></span></div>
+                <div><b>Origin: </b><span id="character-origin"></span></div>
+                <div><b>Gender: </b><span id="character-gender"></span></div>
+            </div>
+        </div>
+    </div>
+    </div>
+
     <!-- Script -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-        crossorigin="anonymous"></script>
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
+    </script>
     <script>
-    // Loading bar
+        // Loading bar
         const loadingBar = document.getElementById('loadingBar');
-        loadingBar.style.width = '50%'; 
+        loadingBar.style.width = '50%';
 
-    // Variables
+        // Variables
         var imgContainer = document.getElementById("img");
         var characterName = document.getElementById("name-container");
         var characterStatus = document.getElementById("character-status");
@@ -106,12 +109,12 @@
         var characterOrigin = document.getElementById("character-origin");
         var characterGender = document.getElementById("character-gender");
 
-    // Load Character Attributes
+        // Load Character Attributes
         const loadCharacter = async (searchTerm) => {
             try {
                 const response = await fetch('https://rickandmortyapi.com/api/character/' + searchTerm);
                 if (response.ok) {
-                    loadingBar.style.width = '80%'; 
+                    loadingBar.style.width = '80%';
                     const character = await response.json();
 
                     imgContainer.src = character.image;
