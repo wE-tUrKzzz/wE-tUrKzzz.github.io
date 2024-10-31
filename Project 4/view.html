@@ -14,7 +14,6 @@
             background-position: center;
             background-repeat: no-repeat;
             background-attachment: scroll;
-
         }
 
         .progress {
@@ -36,133 +35,122 @@
         .custom-nav {
             background-color: #2e8936;
         }
-
-        .progress {
-            height: 4px;
-            margin: 0 auto;
-        }
     </style>
 </head>
 
-<body>
+<body id="body">
 
     <!-- Loading Bar -->
     <div class="progress" id="progress">
         <div class="progress-bar" role="progressbar" id="loadingBar" style="width: 0%;"></div>
     </div>
+
+    <!-- Navbar -->
     <nav class="navbar navbar-expand-lg custom-nav shadow" style="opacity: 70%;">
         <div class="container-fluid d-flex justify-content-between align-items-center">
             <!-- Back Button on the left -->
             <button class="btn btn-primary" onclick="goBack()">Back</button>
 
-            <!-- Empty div to balance the flexbox for centering the logo -->
+            <!-- Centered Logo -->
             <div class="mx-auto">
                 <a class="navbar-brand" href="#">
                     <img src="dir/img/morty.png" alt="Rick and Morty" style="height: 100px; width:auto;">
                 </a>
             </div>
-
-            <!-- Invisible div to fill space and ensure logo is centered -->
-            <div style="width:100px;"></div>
         </div>
     </nav>
-
-
-
-
-
+    <!-- Character Image -->
     <div class="container">
-        <!-- Back Button -->
-
-
-        <body id="body">
-            <div class="container">
-                <div class="row mt-5">
-                    <div class="col">
-
-                        <div class="mx-auto" style="max-width: 400px; background-color: lightgray; border-radius: 200px"
-                            id="img-container">
-                            <img id="img" src="" style="width: 100%;">
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col text-center d-flex justify-content-center">
-                        <div class="rounded-5 card py-2 px-4 mx-auto" id="name-container"
-                            style="margin-top: 30px; margin-bottom: 20px; font-size: 40px;"></div>
-                    </div>
-                </div>
-                <div class="row mt-3">
-                    <div class="col d-flex justify-content-center">
-                        <div class="card p-4 rounded-5" style="width: 400px; font-size: 25px; margin-bottom: 40px;">
-                            <div><b>Status: </b><span id="character-status"></span></div>
-                            <div><b>Species: </b><span id="character-species"></span></div>
-                            <div><b>Origin: </b><span id="character-origin"></span></div>
-                            <div><b>Gender: </b><span id="character-gender"></span></div>
-                        </div>
-                    </div>
+        <div class="row mt-5">
+            <div class="col">
+                <div class="mx-auto" style="max-width: 400px; background-color: lightgray; border-radius: 200px" id="img-container">
+                    <img id="img" src="" class="character-image">
                 </div>
             </div>
+        </div>
 
-            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-                integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-                crossorigin="anonymous">
-            </script>
-            <script>
-                const loadingBar = document.getElementById('loadingBar');
-                loadingBar.style.width = '50%'; // Show halfway when fetching starts 
+    <!-- Character Name -->
+        <div class="row">
+            <div class="col text-center d-flex justify-content-center">
+                <div class="rounded-5 card py-2 px-4 mx-auto" id="name-container" style="margin-top: 30px; margin-bottom: 20px; font-size: 40px;"></div>
+            </div>
+        </div>
 
-                var imgContainer = document.getElementById("img");
-                var characterName = document.getElementById("name-container");
-                var characterStatus = document.getElementById("character-status");
-                var characterSpecies = document.getElementById("character-species");
-                var characterOrigin = document.getElementById("character-origin");
-                var characterGender = document.getElementById("character-gender");
+    <!-- Centered Attributes -->
+        <div class="row mt-3">
+            <div class="col d-flex justify-content-center">
+                <div class="card p-4 rounded-5" style="width: 400px; font-size: 25px; margin-bottom: 40px;">
+                    <div><b>Status: </b><span id="character-status"></span></div>
+                    <div><b>Species: </b><span id="character-species"></span></div>
+                    <div><b>Origin: </b><span id="character-origin"></span></div>
+                    <div><b>Gender: </b><span id="character-gender"></span></div>
+                </div>
+            </div>
+        </div>
+    </div>
 
-                const loadCharacter = async (searchTerm) => {
-                    try {
-                        const response = await fetch('https://rickandmortyapi.com/api/character/' + searchTerm);
-                        if (response.ok) {
-                            loadingBar.style.width = '80%'; // Further progress when data is fetched
-                            const character = await response.json();
+    <!-- Script -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script>
+    // Loading bar
+        const loadingBar = document.getElementById('loadingBar');
+        loadingBar.style.width = '50%'; 
 
-                            img.src = character.image;
-                            characterName.innerHTML = character.name;
-                            characterStatus.innerHTML = character.status;
-                            characterSpecies.innerHTML = character.species
-                            characterOrigin.innerHTML = character.origin.name
-                            characterGender.innerHTML = character.gender
+    // Variables
+        var imgContainer = document.getElementById("img");
+        var characterName = document.getElementById("name-container");
+        var characterStatus = document.getElementById("character-status");
+        var characterSpecies = document.getElementById("character-species");
+        var characterOrigin = document.getElementById("character-origin");
+        var characterGender = document.getElementById("character-gender");
 
-                            loadingBar.style.width = '100%'; // Full width when done
-                        } else {
-                            console.error('Fetch error:', response.statusText);
-                        }
-                    } catch (error) {
-                        console.error('Fetch error:', error);
-                    } finally {
-                        // Hide the loading bar after a short delay
-                        setTimeout(() => {
-                            loadingBar.style.width = '0%';
-                            document.getElementById('progress').style.display = 'none';
-                        }, 500);
-                    }
-                }
-                
+    // Load Character Attributes
+        const loadCharacter = async (searchTerm) => {
+            try {
+                const response = await fetch('https://rickandmortyapi.com/api/character/' + searchTerm);
+                if (response.ok) {
+                    loadingBar.style.width = '80%'; 
+                    const character = await response.json();
 
-                const queryString = window.location.search;
-                const urlParams = new URLSearchParams(queryString);
+                    imgContainer.src = character.image;
+                    characterName.innerHTML = character.name;
+                    characterStatus.innerHTML = character.status;
+                    characterSpecies.innerHTML = character.species;
+                    characterOrigin.innerHTML = character.origin.name;
+                    characterGender.innerHTML = character.gender;
 
-                if (urlParams.has('characterId')) {
-                    loadCharacter(urlParams.get('characterId'));
+                    loadingBar.style.width = '100%'; // Full width when done
                 } else {
-                    document.getElementById("id").innerHTML = "No character";
+                    console.error('Fetch error:', response.statusText);
                 }
+            } catch (error) {
+                console.error('Fetch error:', error);
+            } finally {
+                // Hide the loading bar after a short delay
+                setTimeout(() => {
+                    loadingBar.style.width = '0%';
+                    document.getElementById('progress').style.display = 'none';
+                }, 500);
+            }
+        }
 
-                function goBack() {
-                    window.history.back(); // Navigate to the previous page
-                }
-            </script>
+        // URLSearchParams
+        const queryString = window.location.search;
+        const urlParams = new URLSearchParams(queryString);
 
-        </body>
+        if (urlParams.has('characterId')) {
+            loadCharacter(urlParams.get('characterId'));
+        } else {
+            document.getElementById("id").innerHTML = "No character";
+        }
+
+        function goBack() {
+            window.history.back(); // Navigate to the previous page
+        }
+    </script>
+
+</body>
 
 </html>
