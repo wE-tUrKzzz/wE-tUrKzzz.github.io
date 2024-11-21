@@ -1,0 +1,118 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Font Face */
+@font-face {
+    font-family: 'DMC5Font';
+    src: url('font/DMC5Font.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Body Styling */
+body {
+    background-color: black;
+}
+
+/* Main Content Styling */
+.main-content {
+    position: relative;
+    background: url('img/1.png') no-repeat center center;
+    background-size: cover;
+    padding: 0;
+}
+
+/* Text Container */
+.main-content .container-fluid {
+    position: relative;
+    z-index: 1;
+}
+
+/* Main Title Styling */
+.main-content h1 {
+    font-family: 'DMC5Font', sans-serif;
+    font-size: 15vh;
+    font-weight: bold;
+    color: white;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 1);
+    position: absolute;
+    top: 5%; /* Adjust position based on your design needs */
+    left: 5%;  /* Adjust position based on your design needs */
+    transform: translate(-5%, -10%); /* Fine-tune position */
+}
+
+/* Paragraph Styling */
+.main-content p {
+    font-size: 2.5vh;
+    color: white;
+    max-width: 80%;
+	text-align: center;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
+    position: absolute; /* Position inside the background image */
+    top: 50%; /* Adjust position */
+    left: 15%;
+
+    transform: translate(-5%, -25%); /* Fine-tune position */
+}
+
+/* Button Styling */
+.main-content .btn-danger {
+    font-size: 1rem;
+    padding: 12px 30px;
+    border-radius: 50px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    margin-left: 5vw;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+}
+
+/* Button Hover Effect */
+.main-content .btn-danger:hover {
+    background-color: #c82333;
+    transform: scale(1.05);
+}
+.card-description a{
+	text-align: center;
+}
+/* Card Styling */
+.card {
+    position: relative;
+    margin-bottom: 40px;
+}
+
+/* Card Overlay Styling */
+.card-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    padding: 1rem;
+}
+
+/* Card Hover Effect */
+.card:hover .card-overlay {
+    opacity: 1;
+}
+
+
+/* Responsive Styling for Small Screens */
+@media (max-width: 768px) {
+    .main-content h1 {
+        font-size: 2.5rem;
+    }
+
+    .main-content p {
+        font-size: 1.1rem;
+    }
+}
