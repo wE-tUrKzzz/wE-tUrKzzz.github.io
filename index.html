@@ -106,27 +106,18 @@
 
         .card .card-body.text-center {
             opacity: 0;
-            transform: translateY(20px);
+
         }
 
         #projects::-webkit-scrollbar {
             display: none;
-            /* For Chrome, Safari, and Edge */
-        }
-
-        html {
-            overflow: scroll;
-            overflow-x: hidden;
         }
 
         ::-webkit-scrollbar {
             width: 0;
-            /* Remove scrollbar space */
             background: transparent;
-            /* Optional: just make scrollbar invisible */
         }
 
-        /* Optional: show position indicator in red */
         ::-webkit-scrollbar-thumb {
             background: #FF0000;
         }
@@ -135,7 +126,7 @@
 
 <body>
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg py-2" style="background-color: #000000;">
+    <nav class="navbar navbar-expand-lg py-2 ms-auto" style="background-color: #000000;">
         <div class="container-fluid">
             <!-- Logo and brand text -->
             <a class="navbar-brand" id="portfolioText" href="#home">
@@ -213,272 +204,270 @@
                 </div>
             </div>
 
-   <!-- Carousel Item for Projects -->
-<div class="carousel-item" id="projects" data-bgcolor="lightcoral">
-    <div class="d-block w-100"
-        style="height: 100vh; background-color: lightblue; display: flex; flex-direction: column; overflow-y: auto;">
-        <h3 class="text-center pt-5 animate__animated animate__fadeInUp animate__delay-1s animate__duration-2s"
-            style="font-size: 4vw; font-family: 'Inter', sans-serif; color:black; font-weight: 900;">
-            Projects:</h3>
+            <!-- Carousel Item for Projects -->
+            <div class="carousel-item" id="projects" data-bgcolor="lightcoral">
+                <div class="d-block w-100"
+                    style="height: 100vh; background-color: lightblue; display: flex; flex-direction: column; overflow-y: auto;">
+                    <h3 class="text-center pt-5 mb-5 animate__animated animate__fadeInUp animate__delay-1s animate__duration-2s"
+                        style="font-size: 4vw; font-family: 'Inter', sans-serif; color:black; font-weight: 900;">
+                        Projects:</h3>
 
-        <!-- Project Cards Container -->
-        <div class="container">
-            <div class="row justify-content-center m-4">
-
-                <!-- App Development Card -->
-                <div class="col-lg-5 col-md-6 col-sm-12 mb-4">
-                    <div class="card animate__animated animate__fadeInUp animate__delay-2s animate__duration-2s"
-                        style="border-radius: 15px; background-color: rgb(31, 29, 29); color: white; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); overflow: hidden; transition: transform 0.3s ease-in-out; height: 100%; display: flex; flex-direction: column;">
-                        <a href="Application%20Development/index.html" target="_blank" style="display: block; text-decoration: none;">
-                            <div class="card-body p-0" style="flex-grow: 1;">
-                                <div class="site-preview" id="app-development"
-                                    style="position: relative; width: 100%; height: 100%; overflow: hidden;">
-                                    <!-- Embedded Site -->
-                                    <iframe src="Application%20Development/index.html" class="site-frame" frameborder="0"
-                                        style="width: 100%; height: 100%; pointer-events: none;" scrolling="no"></iframe>
-                                </div>
+                    <!-- Project Cards Container -->
+                    <div class="row justify-content-center m-4">
+                        <!-- App Development Card -->
+                        <div class="col-lg-5 col-md-6 col-sm-12 mb-4">
+                            <div class="card animate__animated animate__fadeInUp animate__delay-2s animate__duration-2s"
+                                style="border-radius: 15px; background-color: rgb(31, 29, 29); overflow: hidden; transition: transform 0.3s ease-in-out; height: 100%; max-width: 800px">
+                                <a href="Application%20Development/index.html" target="_blank"
+                                    style="display: block; text-decoration: none; color: white;">
+                                    <div class="card-body p-0" style="flex-grow: 1;">
+                                        <div class="site-preview" id="app-development"
+                                            style="position: relative; width: 100%; height: 300px; overflow: hidden;">
+                                            <!-- Embedded Site -->
+                                            <iframe src="Application%20Development/index.html" class="site-frame"
+                                                frameborder="0" style="width: 100%; height: 100%; pointer-events: none;"
+                                                scrolling="no"></iframe>
+                                        </div>
+                                    </div>
+                                    <div class="card-body text-center" style="padding: 1rem; flex-shrink: 0;">
+                                        <h5 class="card-title">App Development</h5>
+                                        <p class="card-text">Explore my mobile app development projects.</p>
+                                    </div>
+                                </a>
                             </div>
-                        </a>
-                        <div class="card-body text-center" style="padding: 1rem; flex-shrink: 0;">
-                            <h5 class="card-title">App Development</h5>
-                            <p class="card-text">Explore my mobile app development projects.</p>
+                        </div>
+                
+
+                    <!-- Web Development Card -->
+                    <div class="col-lg-5 col-md-6 col-sm-12 mb-4">
+                        <div class="card animate__animated animate__fadeInUp animate__delay-2s animate__duration-2s"
+                            style="border-radius: 15px; background-color: rgb(31, 29, 29); overflow: hidden; transition: transform 0.3s ease-in-out; height: 100%; max-width: 800px;">
+                            <a href="Web%20Development/index.html" target="_blank"
+                                style="display: block; text-decoration: none; color: white;">
+                                <div class="card-body p-0" style="flex-grow: 1;">
+                                    <div class="site-preview" id="web-development"
+                                        style="position: relative; width: 100%; height:  300px; overflow: hidden;">
+                                        <!-- Embedded Site -->
+                                        <iframe src="Web%20Development/index.html" class="site-frame" frameborder="0"
+                                            style="width: 100%; height: 100%; pointer-events: none;"
+                                            scrolling="no"></iframe>
+                                    </div>
+                                </div>
+                                <div class="card-body text-center" style="padding: 1rem; flex-shrink: 0;">
+                                    <h5 class="card-title">Web Development</h5>
+                                    <p class="card-text">Browse through my web development projects.</p>
+                            </a>
                         </div>
                     </div>
                 </div>
 
-                <!-- Web Development Card -->
-                <div class="col-lg-5 col-md-6 col-sm-12 mb-4">
-                    <div class="card animate__animated animate__fadeInUp animate__delay-2s animate__duration-2s"
-                        style="border-radius: 15px; background-color: rgb(31, 29, 29); color: white; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); overflow: hidden; transition: transform 0.3s ease-in-out; height: 100%; display: flex; flex-direction: column;">
-                        <a href="Web%20Development/index.html" target="_blank" style="display: block; text-decoration: none;">
-                            <div class="card-body p-0" style="flex-grow: 1;">
-                                <div class="site-preview" id="web-development"
-                                    style="position: relative; width: 100%; height: 100%; overflow: hidden;">
-                                    <!-- Embedded Site -->
-                                    <iframe src="Web%20Development/index.html" class="site-frame" frameborder="0"
-                                        style="width: 100%; height: 100%; pointer-events: none;" scrolling="no"></iframe>
-                                </div>
-                            </div>
-                        </a>
-                        <div class="card-body text-center" style="padding: 1rem; flex-shrink: 0;">
-                            <h5 class="card-title">Web Development</h5>
-                            <p class="card-text">Browse through my web development projects.</p>
-                        </div>
-                    </div>
-                </div>
 
             </div>
         </div>
     </div>
-</div>
+    <!-- Carousel 4 -->
+    <div class="carousel-item" id="contact" data-bgcolor="lightgoldenrodyellow">
+        <div class="d-block w-100" style="min-height: 100vh; background-color: #DCDC67;">
+            <div class="text-center pt-5 animate__animated animate__fadeInUp animate__delay-1s animate__duration-2s"
+                style="font-size: 9vw; font-family: 'Inter', sans-serif; color:black;font-weight: 900;">Craving
+                for More?
+            </div>
+            <h2 class="text-center pt-5 animate__animated animate__fadeInUp animate__delay-2s animate__duration-2s"
+                style="font-size: 2vw; font-family: 'Inter', sans-serif; color:black;font-weight: 900;">Let's
+                talk!
+            </h2>
 
+            <div class="container">
+                <div class="row justify-content-center m-4">
 
-
-
-            <!-- Carousel 4 -->
-            <div class="carousel-item" id="contact" data-bgcolor="lightgoldenrodyellow">
-                <div class="d-block w-100" style="min-height: 100vh; background-color: #DCDC67;">
-                    <div class="text-center pt-5 animate__animated animate__fadeInUp animate__delay-1s animate__duration-2s"
-                        style="font-size: 9vw; font-family: 'Inter', sans-serif; color:black;font-weight: 900;">Craving
-                        for More?
-                    </div>
-                    <h2 class="text-center pt-5 animate__animated animate__fadeInUp animate__delay-2s animate__duration-2s"
-                        style="font-size: 2vw; font-family: 'Inter', sans-serif; color:black;font-weight: 900;">Let's
-                        talk!
-                    </h2>
-
-                    <div class="container">
-                        <div class="row justify-content-center m-4">
-
-                            <!-- Card 1 -->
-                            <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
-                                <div class="card animate__animated animate__fadeInUp animate__delay-3s animate__duration-2s"
-                                    style="border-radius: 15px;background-color: rgb(31, 29, 29); color: white; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); overflow: hidden; transition: transform 0.3s ease-in-out;">
-                                    <a href="https://mail.google.com/mail/?view=cm&fs=1&to=louisito75@gmail.com&su=Hello&body=I%20would%20like%20to%20connect."
-                                        target="_blank" style="display: block; text-decoration: none;">
-                                        <div class="card-body p-0 text-center"
-                                            style="height: 100%; opacity: 1 !important; transform: none !important;">
-                                            <!-- Google Icon -->
-                                            <i class="fab fa-google fa-3x" style="color: #4285F4;"></i>
-                                        </div>
-                                    </a>
+                    <!-- Card 1 -->
+                    <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                        <div class="card animate__animated animate__fadeInUp animate__delay-3s animate__duration-2s"
+                            style="border-radius: 15px;background-color: rgb(31, 29, 29); color: white; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); overflow: hidden; transition: transform 0.3s ease-in-out;">
+                            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=louisito75@gmail.com&su=Hello&body=I%20would%20like%20to%20connect."
+                                target="_blank" style="display: block; text-decoration: none;">
+                                <div class="card-body p-0 text-center"
+                                    style="height: 100%; opacity: 1 !important; transform: none !important;">
+                                    <!-- Google Icon -->
+                                    <i class="fab fa-google fa-3x" style="color: #4285F4;"></i>
                                 </div>
-                            </div>
-
-                            <!-- Card 2 -->
-                            <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
-                                <div class="card animate__animated animate__fadeInUp animate__delay-3s animate__duration-2s"
-                                    style="border-radius: 15px;background-color: rgb(31, 29, 29) ; color: white; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); overflow: hidden; transition: transform 0.3s ease-in-out;">
-                                    <a href="https://www.linkedin.com/in/louis-santos-0a733b259/" target="_blank"
-                                        style="display: block; text-decoration: none;">
-                                        <div class="card-body p-0 text-center"
-                                            style="height: 100%; opacity: 1 !important; transform: none !important;">
-                                            <!-- LinkedIn Icon -->
-                                            <i class="fab fa-linkedin fa-3x" style="color: #0077b5;"></i>
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
-
-                            <!-- Card 3 -->
-                            <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
-                                <div class="card animate__animated animate__fadeInUp animate__delay-3s animate__duration-2s"
-                                    style="border-radius: 15px;background-color: rgb(31, 29, 29) ; color: white; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); overflow: hidden; transition: transform 0.3s ease-in-out;">
-                                    <a href="https://github.com/wE-tUrKzzz" target="_blank"
-                                        style="display: block; text-decoration: none;">
-                                        <div class="card-body p-0 text-center"
-                                            style="height: 100%; opacity: 1 !important; transform: none !important;">
-                                            <!-- GitHub Icon -->
-                                            <i class="fab fa-github fa-3x" style="color: #0077b5;"></i>
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
-
-                            <!-- Prev and Next Button -->
-                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselContent"
-                                data-bs-slide="prev">
-                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                <span class="visually-hidden">Previous</span>
-                            </button>
-                            <button class="carousel-control-next" type="button" data-bs-target="#carouselContent"
-                                data-bs-slide="next">
-                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                <span class="visually-hidden">Next</span>
-                            </button>
+                            </a>
                         </div>
                     </div>
+
+                    <!-- Card 2 -->
+                    <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                        <div class="card animate__animated animate__fadeInUp animate__delay-3s animate__duration-2s"
+                            style="border-radius: 15px;background-color: rgb(31, 29, 29) ; color: white; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); overflow: hidden; transition: transform 0.3s ease-in-out;">
+                            <a href="https://www.linkedin.com/in/louis-santos-0a733b259/" target="_blank"
+                                style="display: block; text-decoration: none;">
+                                <div class="card-body p-0 text-center"
+                                    style="height: 100%; opacity: 1 !important; transform: none !important;">
+                                    <!-- LinkedIn Icon -->
+                                    <i class="fab fa-linkedin fa-3x" style="color: #0077b5;"></i>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Card 3 -->
+                    <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                        <div class="card animate__animated animate__fadeInUp animate__delay-3s animate__duration-2s"
+                            style="border-radius: 15px;background-color: rgb(31, 29, 29) ; color: white; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); overflow: hidden; transition: transform 0.3s ease-in-out;">
+                            <a href="https://github.com/wE-tUrKzzz" target="_blank"
+                                style="display: block; text-decoration: none;">
+                                <div class="card-body p-0 text-center"
+                                    style="height: 100%; opacity: 1 !important; transform: none !important;">
+                                    <!-- GitHub Icon -->
+                                    <i class="fab fa-github fa-3x" style="color: #0077b5;"></i>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Prev and Next Button -->
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselContent"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselContent"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
                 </div>
             </div>
         </div>
-        <!-- Footer -->
-        <footer class="text-center" style="background-color: #000000;">
-            <div class="container pt-4">
-                <section class="social-icons d-flex justify-content-center align-items-center mb-2">
-                    <a href="https://mail.google.com/mail/?view=cm&fs=1&to=louisito75@gmail.com&su=Hello&body=I%20would%20like%20to%20connect."
-                        target="_blank" role="button"><i class="fab fa-google"></i></a>
-                    <a href="https://www.linkedin.com/in/louis-santos-0a733b259/" target="_blank" role="button"><i
-                            class="fab fa-linkedin"></i></a>
-                    <a href="https://github.com/wE-tUrKzzz" target="_blank" role="button"><i
-                            class="fab fa-github"></i></a>
-                </section>
-                <div class="text-center p-4">
-                    <a style="color: rgb(255, 255, 255)">Website is just a project. All Rights Reserved.</a>
-                </div>
+    </div>
+    </div>
+    <!-- Footer -->
+    <footer class="text-center" style="background-color: #000000;">
+        <div class="container pt-4">
+            <section class="social-icons d-flex justify-content-center align-items-center mb-2">
+                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=louisito75@gmail.com&su=Hello&body=I%20would%20like%20to%20connect."
+                    target="_blank" role="button"><i class="fab fa-google"></i></a>
+                <a href="https://www.linkedin.com/in/louis-santos-0a733b259/" target="_blank" role="button"><i
+                        class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/wE-tUrKzzz" target="_blank" role="button"><i class="fab fa-github"></i></a>
+            </section>
+            <div class="text-center p-4">
+                <a style="color: rgb(255, 255, 255)">Website is just a project. All Rights Reserved.</a>
             </div>
-        </footer>
+        </div>
+    </footer>
 
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-        <script>
-            document.addEventListener('DOMContentLoaded', function () {
-                const navLinks = document.querySelectorAll('.nav-link');
-                const carouselItems = document.querySelectorAll('.carousel-item');
-                const carousel = document.getElementById('carouselContent');
-                const portfolioLink = document.getElementById('portfolioText');
-                let isTransitioning =
-                    false; // Flag to prevent multiple transitions at the same time
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const navLinks = document.querySelectorAll('.nav-link');
+            const carouselItems = document.querySelectorAll('.carousel-item');
+            const carousel = document.getElementById('carouselContent');
+            const portfolioLink = document.getElementById('portfolioText');
+            let isTransitioning =
+                false; // Flag to prevent multiple transitions at the same time
 
-                // Update active nav link based on the active carousel item
-                function updateActiveNav() {
-                    var activeItem = document.querySelector('.carousel-item.active');
-                    var activeNav = document.querySelector('.nav-link[href="#' + activeItem.id +
-                        '"]');
+            // Update active nav link based on the active carousel item
+            function updateActiveNav() {
+                var activeItem = document.querySelector('.carousel-item.active');
+                var activeNav = document.querySelector('.nav-link[href="#' + activeItem.id +
+                    '"]');
 
-                    // Reset all nav links to white and remove 'disabled' class
-                    navLinks.forEach(function (link) {
-                        link.style.color =
-                            "white"; // Ensure color is white for all nav items
-                        link.classList.remove('disabled'); // Remove 'disabled' class
-                        link.style.pointerEvents = 'auto'; // Enable clicks
-                    });
+                // Reset all nav links to white and remove 'disabled' class
+                navLinks.forEach(function (link) {
+                    link.style.color =
+                        "white"; // Ensure color is white for all nav items
+                    link.classList.remove('disabled'); // Remove 'disabled' class
+                    link.style.pointerEvents = 'auto'; // Enable clicks
+                });
 
-                    // Disable the "Portfolio" link when on the home section
-                    if (activeItem.id === "home") {
-                        portfolioLink.classList.add(
-                            'disabled'); // Add 'disabled' class to portfolio link
-                        portfolioLink.style.pointerEvents = 'none'; // Disable clicks on portfolio
-                    } else {
-                        portfolioLink.classList.remove(
-                            'disabled'); // Remove 'disabled' class for other sections
-                        portfolioLink.style.pointerEvents = 'auto'; // Enable clicks on portfolio
-                    }
-
-                    // Change color of the active link based on the carousel section
-                    if (activeNav) {
-                        if (activeItem.id === "home") {
-                            activeNav.style.color = "lightgreen"; // Home color
-                        } else if (activeItem.id === "about") {
-                            activeNav.style.color = "#F18081"; // About color
-                        } else if (activeItem.id === "projects") {
-                            activeNav.style.color = "lightblue"; // Projects color
-                        } else if (activeItem.id === "contact") {
-                            activeNav.style.color = "#DCDC67"; // Contact color
-                        }
-
-                        // Disable the active nav link to make it unclickable
-                        activeNav.classList.add('disabled');
-                        activeNav.style.pointerEvents =
-                            'none'; // Prevent clicks on the active nav link
-                    }
+                // Disable the "Portfolio" link when on the home section
+                if (activeItem.id === "home") {
+                    portfolioLink.classList.add(
+                        'disabled'); // Add 'disabled' class to portfolio link
+                    portfolioLink.style.pointerEvents = 'none'; // Disable clicks on portfolio
+                } else {
+                    portfolioLink.classList.remove(
+                        'disabled'); // Remove 'disabled' class for other sections
+                    portfolioLink.style.pointerEvents = 'auto'; // Enable clicks on portfolio
                 }
 
-                // Event listener for carousel slide transition
-                carousel.addEventListener('slid.bs.carousel', function () {
-                    isTransitioning =
-                        false; // Allow future transitions after the current one ends
-                    updateActiveNav(); // Update nav after transition
-                });
-
-                // Event listener for nav links
-                navLinks.forEach(function (link) {
-                    link.addEventListener('click', function (event) {
-                        event
-                            .preventDefault(); // Prevent the default anchor link behavior
-
-                        if (isTransitioning)
-                            return; // If a transition is already happening, prevent triggering another one
-
-                        isTransitioning =
-                            true; // Set flag to indicate that transition is in progress
-
-                        var targetId = link.getAttribute('href').substring(1);
-                        var targetIndex = Array.from(carouselItems).findIndex(
-                            function (
-                                item) {
-                                return item.id === targetId;
-                            });
-
-                        new bootstrap.Carousel(carousel).to(
-                            targetIndex); // Slide to the selected carousel item
-                    });
-                });
-
-                // Special handling for the Portfolio link to return to Home section
-                portfolioLink.addEventListener('click', function (event) {
-                    if (!portfolioLink.classList.contains('disabled') && !isTransitioning) {
-                        event.preventDefault(); // Prevent any default action
-
-                        isTransitioning =
-                            true; // Set flag to indicate that transition is in progress
-
-                        // Slide carousel back to the home section
-                        var homeItem = document.getElementById('home');
-                        var homeIndex = Array.from(carouselItems).findIndex(function (
-                            item) {
-                            return item.id === homeItem.id;
-                        });
-                        new bootstrap.Carousel(carousel).to(homeIndex);
-
-                        // Disable the Portfolio link again after returning to Home
-                        portfolioLink.classList.add('disabled');
-                        portfolioLink.style.pointerEvents = 'none';
+                // Change color of the active link based on the carousel section
+                if (activeNav) {
+                    if (activeItem.id === "home") {
+                        activeNav.style.color = "lightgreen"; // Home color
+                    } else if (activeItem.id === "about") {
+                        activeNav.style.color = "#F18081"; // About color
+                    } else if (activeItem.id === "projects") {
+                        activeNav.style.color = "lightblue"; // Projects color
+                    } else if (activeItem.id === "contact") {
+                        activeNav.style.color = "#DCDC67"; // Contact color
                     }
-                });
 
-                // Initial call to highlight the nav item corresponding to the active section
-                updateActiveNav();
+                    // Disable the active nav link to make it unclickable
+                    activeNav.classList.add('disabled');
+                    activeNav.style.pointerEvents =
+                        'none'; // Prevent clicks on the active nav link
+                }
+            }
+
+            // Event listener for carousel slide transition
+            carousel.addEventListener('slid.bs.carousel', function () {
+                isTransitioning =
+                    false; // Allow future transitions after the current one ends
+                updateActiveNav(); // Update nav after transition
             });
-        </script>
+
+            // Event listener for nav links
+            navLinks.forEach(function (link) {
+                link.addEventListener('click', function (event) {
+                    event
+                        .preventDefault(); // Prevent the default anchor link behavior
+
+                    if (isTransitioning)
+                        return; // If a transition is already happening, prevent triggering another one
+
+                    isTransitioning =
+                        true; // Set flag to indicate that transition is in progress
+
+                    var targetId = link.getAttribute('href').substring(1);
+                    var targetIndex = Array.from(carouselItems).findIndex(
+                        function (
+                            item) {
+                            return item.id === targetId;
+                        });
+
+                    new bootstrap.Carousel(carousel).to(
+                        targetIndex); // Slide to the selected carousel item
+                });
+            });
+
+            // Special handling for the Portfolio link to return to Home section
+            portfolioLink.addEventListener('click', function (event) {
+                if (!portfolioLink.classList.contains('disabled') && !isTransitioning) {
+                    event.preventDefault(); // Prevent any default action
+
+                    isTransitioning =
+                        true; // Set flag to indicate that transition is in progress
+
+                    // Slide carousel back to the home section
+                    var homeItem = document.getElementById('home');
+                    var homeIndex = Array.from(carouselItems).findIndex(function (
+                        item) {
+                        return item.id === homeItem.id;
+                    });
+                    new bootstrap.Carousel(carousel).to(homeIndex);
+
+                    // Disable the Portfolio link again after returning to Home
+                    portfolioLink.classList.add('disabled');
+                    portfolioLink.style.pointerEvents = 'none';
+                }
+            });
+
+            // Initial call to highlight the nav item corresponding to the active section
+            updateActiveNav();
+        });
+    </script>
 
 
 </body>
