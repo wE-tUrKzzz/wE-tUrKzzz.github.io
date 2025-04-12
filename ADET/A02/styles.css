@@ -50,12 +50,14 @@ body {
     border: 6px solid #ed7902;
 }
 
-.main .card::-webkit-scrollbar {
+.main::-webkit-scrollbar {
     display: none;
 }
+
 .aboutus .card::-webkit-scrollbar {
     display: none;
 }
+
 .burger .card::-webkit-scrollbar {
     display: none;
 }
@@ -63,11 +65,28 @@ body {
 .item-card {
     transition: transform 0.3s ease-in-out;
     border: none;
+    background-color: #EFDABD;
+
 }
+
+.burger.container {
+    font-family: 'Regular', sans-serif; 
+    color: #333333 !important;
+}
+
+.burger.container .h3{
+    font-family: 'Burger', sans-serif;
+}
+
+.burger.container .card-text {
+    color: #555555;
+  }
 
 .item-card:hover {
-    transform: scale(0.9); 
-    
+    transform: scale(0.9);
 }
-
-
+.checkout.container {
+    font-size: 3vh;
+    font-family: 'Regular', sans-serif; 
+    color: #333333 !important;
+  }

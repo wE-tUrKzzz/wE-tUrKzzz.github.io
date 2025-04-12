@@ -1,11 +1,11 @@
-<div class="aboutus container">
+<div class="aboutus container ">
 
     <div class="m-4 mb-4">
 
 
-        <h1 class="mb-3  text-center">Welcome to BK®</h1>
+        <h1 class="mb-3 animate__animated animate__fadeInUp text-center">Welcome to BK®</h1>
         <div class="text-center">
-            <img src="dir/img/Location1.webp" class="aboutus-img">
+            <img src="dir/img/Location1.webp" class="aboutus-img animate__fadeInUp">
         </div>
 
         <p class="mt-4">
