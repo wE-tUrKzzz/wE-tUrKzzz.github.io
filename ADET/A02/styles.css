@@ -1,0 +1,73 @@
+@font-face {
+    font-family: 'Burger';
+    src: url('dir/font/Insanibu.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Regular';
+    src: url('dir/font/FlameRegular.otf') format('opentype');
+}
+
+body {
+    min-width: 500px;
+    min-height: 500px;
+    background-color: #f9f1e6;
+}
+
+.list-group-item {
+    color: #502314;
+}
+
+.list-group-item a {
+    color: inherit;
+}
+
+.list-group-item:hover {
+    background-color: #502314;
+    color: #fff;
+}
+
+.aboutus h1,
+.aboutus h3 {
+    font-family: Burger, sans-serif;
+    color: #512315;
+}
+
+.aboutus p {
+    font-family: 'Regular', sans-serif;
+    color: #502314;
+    text-align: center;
+    width: 80%;
+    margin: 0 auto
+}
+
+.aboutus-img {
+    width: 80%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-top: 20px;
+    border: 6px solid #ed7902;
+}
+
+.main .card::-webkit-scrollbar {
+    display: none;
+}
+.aboutus .card::-webkit-scrollbar {
+    display: none;
+}
+.burger .card::-webkit-scrollbar {
+    display: none;
+}
+
+.item-card {
+    transition: transform 0.3s ease-in-out;
+    border: none;
+}
+
+.item-card:hover {
+    transform: scale(0.9); 
+    
+}
+
+
