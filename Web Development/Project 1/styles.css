@@ -1,0 +1,85 @@
+[data-bs-theme="custom"] {
+    background-color: #17252a !important;
+    border: 2px solid #2e3036;
+}
+
+.ps4-img {
+    height: auto;
+    max-width: 1000px;
+    width: 100%;
+    display: block;
+    min-height: 50vh;
+}
+
+.nav a {
+    color: white;
+    padding: 10px 10px;
+}
+
+.nav a:hover {
+    color: #007bff;
+}
+
+.navbar-brand img {
+    max-height: 40px;
+}
+
+footer .social-icons a {
+    color: white;
+    margin: 10px;
+    font-size: 25px;
+}
+
+.btn:hover {
+    background-color: #1d157a !important;
+}
+
+.btn-primary {
+    background-color: #28a745;
+}
+
+
+.btn-primary:hover {
+    background-color: #218838;
+}
+
+
+.ps4.card {
+    background-color: #1e2a63;
+    color: white;
+}
+
+@media (max-width: 480px) {
+    .ps4-img {
+        min-height: 30vh;
+    }
+
+    .ps4.card {
+        width: 100%;
+    }
+
+}
+
+.container-fluid.pt-5.pb-5 {
+    background-color: #0f0f3d;
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+footer {
+    background-color: #000000;
+    padding: 2rem 0;
+    margin-top: auto;
+}
+
+.footer-text {
+    color: white;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
