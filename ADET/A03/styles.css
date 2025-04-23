@@ -1,0 +1,15 @@
+body {
+    background-color: #121212;
+    color: #fff;
+  }
+  .sidebar {
+    background-color: #000;
+    min-height: 100vh;
+  }
+  .footer-player {
+    background-color: #282828;
+    padding: 1rem;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
