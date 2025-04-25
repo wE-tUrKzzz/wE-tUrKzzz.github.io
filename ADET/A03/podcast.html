@@ -34,20 +34,9 @@
                                 <div class="input-group-text rounded-circle me-5 ms-2" role="button">
                                     <img src="dir/shared/img/search.svg" class="img" alt="Search">
                                 </div>
-
+                                
                                 <i class="bi bi-search position-absolute top-50 start-0 translate-middle-y ms-3"></i>
                                 <input type="text" class="form-control rounded-pill ps-5" placeholder="Search">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="row justify-content-center mt-4">
-                    <div class="col-12 col-md-11">
-                        <div class="card shadow-sm rounded-5 bg-dark">
-                            <div class="main-card card-body">
-                                <h2 class="card-title ms-3 mt-2">Its New Music Everyday!</h2>
-
                             </div>
                         </div>
                     </div>
@@ -58,27 +47,10 @@
         </div>
 
         <div class="col-12">
-            <div class="footer-player text-white d-flex justify-content-between align-items-center py-2 px-3 fixed-bottom d-none d-md-flex"
-                style="background-color: #222;">
-
-                <!-- Left: Album Art + Song Info -->
-                <div class="d-flex align-items-center gap-2">
-                    <img src="dir/shared/img/album.jpg" alt="Album Art" width="40" height="40" class="rounded">
-                    <div>
-                        <div class="fw-bold">Song Title</div>
-                        <small class="text-muted">Artist Name</small>
-                    </div>
-                </div>
-
-                <!-- Center: Progress + Controls (your buttons preserved) -->
-                <div class="text-center flex-grow-1 mx-4">
-                    <!-- Progress Bar -->
-                    <div class="d-flex align-items-center justify-content-center gap-2 mb-1">
-                        <small>1:24</small>
-                        <input type="range" class="form-range w-50" value="30">
-                        <small>3:45</small>
-                    </div>
-                    <!-- Your Original Controls -->
+            <div
+                class="footer-player text-white d-flex justify-content-around align-items-center py-2 fixed-bottom d-none d-md-block">
+                
+                <div class="text-center mx-auto">
                     <div class="d-flex justify-content-center w-100 mt-2">
                         <div class="input-group align-items-center w-auto">
                             <div class="input-group-text rounded-circle mx-2" role="button">
@@ -93,16 +65,9 @@
                         </div>
                     </div>
                 </div>
-
-                <!-- Right: Volume -->
-                <div class="d-flex align-items-center gap-2">
-                    🔉
-                    <input type="range" class="form-range" style="width: 100px;" value="75">
-                </div>
-
+                <div class="text-end">🔉</div>
             </div>
         </div>
-    </div>
     </div>
     </div>
 
@@ -111,26 +76,9 @@
 
     <div class="col-12 d-md-none position-fixed bottom-0 w-100 bg-black">
         <div class="footer-player-phone text-white d-flex justify-content-between align-items-center px-3 py-2">
+            
 
-            <!-- Left: Album Art + Song Info -->
-            <div class="d-flex align-items-center gap-2">
-                <img src="dir/shared/img/naiilang.jpg" alt="Album Art" width="30" height="30" class="rounded">
-                <div>
-                    <div class="fw-bold mt-3">Naiilang</div>
-                    <p class="fs-6">Le John</p>
-                </div>
-            </div>
-
-            <!-- Center: Progress Bar + Controls -->
-            <div class="d-flex flex-column align-items-center justify-content-center w-100 ">
-                <!-- Progress Bar -->
-                <div class="d-flex align-items-center justify-content-center gap-2 mb-1 w-75 ms-2">
-                    <small>1:24</small>
-                    <input type="range" class="form-range w-100" value="0">
-                    <small>3:45</small>
-                </div>
-
-                <!-- Controls (Buttons as you wanted) -->
+            <div class="d-flex justify-content-center w-100">
                 <div class="input-group align-items-center w-auto">
                     <div class="input-group-text rounded-circle mx-1" role="button">
                         <img src="dir/shared/img/rewind.svg" class="music-player" alt="Prev">
@@ -144,22 +92,14 @@
                 </div>
             </div>
 
-            <!-- Right: Volume Control -->
-            <div class="d-flex align-items-center gap-2">
-                🔉
-                <input type="range" class="form-range" style="width: 80px;" value="20">
-            </div>
+            
+        </div>
 
-
-
-
-    </div>
-
-    <nav class="navbar navbar-dark bg-black text-white d-flex justify-content-around">
-        <a class="nav-link text-white text-center" href="#">🏠<br><small>Home</small></a>
-        <a class="nav-link text-white text-center" href="#">🔍<br><small>Search</small></a>
-        <a class="nav-link text-white text-center" href="#">📚<br><small>Library</small></a>
-    </nav>
+        <nav class="navbar navbar-dark bg-black text-white d-flex justify-content-around">
+            <a class="nav-link text-white text-center" href="#">🏠<br><small>Home</small></a>
+            <a class="nav-link text-white text-center" href="#">🔍<br><small>Search</small></a>
+            <a class="nav-link text-white text-center" href="#">📚<br><small>Library</small></a>
+        </nav>
     </div>
 
 

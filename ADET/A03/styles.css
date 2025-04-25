@@ -1,15 +1,99 @@
+@font-face {
+  font-family: 'GothamLight';
+  src: url('dir/shared/Font/GothamLight.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'GothamMedium';
+  src: url('dir/shared/Font/GothamMedium_1.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+
 body {
-    background-color: #121212;
-    color: #fff;
-  }
-  .sidebar {
-    background-color: #000;
-    min-height: 100vh;
-  }
-  .footer-player {
-    background-color: #282828;
-    padding: 1rem;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-  }
+  background-color: #1E1E1E;
+  color: #fff;
+  font-family: 'GothamLight', sans-serif;
+  
+}
+
+.sidebar {
+  background-color: #0000;
+  min-height: 100vh;
+}
+
+.img {
+  max-width: 100%;
+  height: auto;
+}
+
+.sidebar-card {
+  height: 80%;
+}
+
+.sidebar-list{
+  font-family: 'GothamMedium', sans-serif;
+}
+.sidebar-list .nav-item {
+  width: 100%; 
+  padding-bottom: 5px; 
+  border-bottom: 1px solid #ffffff;
+  font-size: 2.5vh;
+}
+
+.col-md-10 {
+  padding-bottom: 70px;
+}
+
+.input-group-text {
+  width: 40px; 
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f8f9fa;
+  border-radius: 50%;
+}
+
+.bi-search {
+  font-size: 18px;
+}
+
+.main-card {
+  min-height: 70vh; 
+  color: #fff;
+  font-family: 'GothamMedium', sans-serif;
+}
+
+.footer-player {
+  background-color: #282828;
+  padding: 1rem;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+.footer-player-phone {
+  background-color: #282828;
+  padding: 1rem;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  margin-bottom: 65px;
+}
+.music-player{
+  max-width: 100%;
+  height: auto;
+}
+
+.navbar {
+  opacity: 0.7;
+}
+
+.footer-player-phone,
+.navbar {
+  z-index: 1050;
+}
