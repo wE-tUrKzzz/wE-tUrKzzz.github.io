@@ -28,7 +28,7 @@ body::-webkit-scrollbar {
 
 p{
   font-family:"GothamLight",sans-serif ;
-  font-size: 1.5vh;
+  font-size: 0.5vh;
 }
 
 .sidebar {
@@ -154,7 +154,7 @@ p{
 }
 .input-group-text{
   max-width: 100%;
-  height: 1vh;
+  height: auto;
 }
 
 .navbar {
@@ -171,3 +171,19 @@ p{
     padding-bottom: 100px;
   }
 }
+
+
+@media (max-width: 576px) {
+  .mobile-small {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .music-player {
+    max-width: 10px;
+    height: auto;
+  }
+}
+
+
