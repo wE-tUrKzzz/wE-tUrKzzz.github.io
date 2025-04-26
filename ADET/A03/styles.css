@@ -4,6 +4,7 @@
   font-weight: normal;
   font-style: normal;
 }
+
 @font-face {
   font-family: 'GothamMedium';
   src: url('dir/shared/Font/GothamMedium_1.ttf') format('truetype');
@@ -17,12 +18,23 @@ body {
   background-color: #1E1E1E;
   color: #fff;
   font-family: 'GothamLight', sans-serif;
-  
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+
+}
+body::-webkit-scrollbar {
+  display: none;
+}
+
+p{
+  font-family:"GothamLight",sans-serif ;
+  font-size: 1.5vh;
 }
 
 .sidebar {
   background-color: #0000;
   min-height: 100vh;
+  
 }
 
 .img {
@@ -32,16 +44,18 @@ body {
 
 .sidebar-card {
   height: 80%;
+  
 }
 
-.sidebar-list{
+.sidebar-list {
   font-family: 'GothamMedium', sans-serif;
 }
+
 .sidebar-list .nav-item {
-  width: 100%; 
-  padding-bottom: 5px; 
+  width: 100%;
+  padding-bottom: 5px;
   border-bottom: 1px solid #ffffff;
-  font-size: 2.5vh;
+  font-size: 2vh;
 }
 
 .col-md-10 {
@@ -49,7 +63,7 @@ body {
 }
 
 .input-group-text {
-  width: 40px; 
+  width: 40px;
   height: 40px;
   display: flex;
   justify-content: center;
@@ -62,10 +76,59 @@ body {
   font-size: 18px;
 }
 
+.image-card {
+  position: relative;
+  overflow: hidden;
+  height: 207px;
+}
+
+.card-img {
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+  transition: opacity 0.3s ease;
+}
+
 .main-card {
-  min-height: 70vh; 
+  min-height: 75vh;
   color: #fff;
   font-family: 'GothamMedium', sans-serif;
+}
+
+.overlay-content {
+  background: rgba(0, 0, 0, 0.8);
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.card.glass-card:hover .overlay-content {
+  opacity: 1;
+  transform: translateY(0);
+}
+.glass-card {
+  border: none !important;
+}
+
+.card.glass-card:hover .card-body {
+  display: flex; 
+  opacity: 1;
+  transform: translateY(0); 
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.hover-card {
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.hover-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(255, 255, 255, 0.2);
+}
+
+.card.glass-card .card-body {
+  opacity: 0; 
+  transform: translateY(20px); 
+  transition: opacity 0.3s ease, transform 0.3s ease;
 }
 
 .footer-player {
@@ -84,7 +147,8 @@ body {
   width: 100%;
   margin-bottom: 65px;
 }
-.music-player{
+
+.music-player {
   max-width: 100%;
   height: auto;
 }
@@ -96,4 +160,10 @@ body {
 .footer-player-phone,
 .navbar {
   z-index: 1050;
+}
+
+@media (max-width: 768px) {
+  .main-card {
+    padding-bottom: 100px;
+  }
 }
