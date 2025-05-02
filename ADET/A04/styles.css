@@ -16,14 +16,14 @@ body {
 
 
 .custom-button {
-    width: 80vw;
-    max-width: 300px;
+    width: 80dvh;
+    max-width: 500px;
     font-size: 3.5vh;
 }
 
 .custom-button.content {
-    width: 70vw;
-    max-width: 250px;
+    width: 80dvh;
+    max-width: 300px;
     font-size: 3vh;
 }
 
@@ -93,3 +93,12 @@ body {
 .receiptcontainer::-webkit-scrollbar {
     width: 0px;
 }
+
+@media (max-width: 768px) {
+    .receiptcontainer {
+      height: auto !important;
+      margin-top: 1rem;
+      margin: auto
+    }
+  }
+

@@ -1,0 +1,493 @@
+[{
+        "category": "Beverage",
+        "contents": [{
+                "isAvailable": true,
+                "name": "Mug Root Beer",
+                "code": "MRB",
+                "sizes": [{
+                        "name": "medium",
+                        "code": "MD",
+                        "price": 99
+                    },
+                    {
+                        "name": "large",
+                        "code": "LG",
+                        "price": 115
+                    }
+                ]
+            },
+            {
+                "isAvailable": true,
+                "name": "Mug Root Beer Float",
+                "code": "MRBFLT",
+                "sizes": [{
+                    "name": "default",
+                    "code": "DF",
+                    "price": 66
+                }]
+            },
+            {
+                "isAvailable": true,
+                "name": "Coke Zero",
+                "code": "CZ",
+                "sizes": [{
+                        "name": "medium",
+                        "code": "MD",
+                        "price": 115
+                    },
+                    {
+                        "name": "large",
+                        "code": "LG",
+                        "price": 99
+                    }
+                ]
+            },
+            {
+                "isAvailable": true,
+                "name": "Orange Juice",
+                "code": "OJ",
+                "sizes": [{
+                        "name": "medium",
+                        "code": "MD",
+                        "price": 102
+                    },
+                    {
+                        "name": "large",
+                        "code": "LG",
+                        "price": 111
+                    }
+                ]
+            },
+            {
+                "isAvailable": true,
+                "name": "Apple Juice",
+                "code": "AJ",
+                "sizes": [{
+                        "name": "medium",
+                        "code": "MD",
+                        "price": 102
+                    },
+                    {
+                        "name": "large",
+                        "code": "LG",
+                        "price": 112
+                    }
+                ]
+            },
+            {
+                "isAvailable": true,
+                "name": "Sarsi Float",
+                "code": "SARSFLT",
+                "sizes": [{
+                    "name": "default",
+                    "code": "DF",
+                    "price": 62
+                }]
+            },
+            {
+                "isAvailable": true,
+                "name": "Regular Sarsi",
+                "code": "SARS",
+                "sizes": [{
+                    "name": "default",
+                    "code": "DF",
+                    "price": 113
+                }]
+            },
+            {
+                "isAvailable": true,
+                "name": "Coke Float",
+                "code": "COKEFLT",
+                "sizes": [{
+                    "name": "default",
+                    "code": "DF",
+                    "price": 67
+                }]
+            },
+            {
+                "isAvailable": true,
+                "name": "Lipton Ice Tea",
+                "code": "LIPT",
+                "sizes": [{
+                        "name": "default",
+                        "code": "DF",
+                        "price": 98
+                    },
+                    {
+                        "name": "large",
+                        "code": "LG",
+                        "price": 112
+                    }
+                ]
+            },
+            {
+                "isAvailable": true,
+                "name": "Iced Black Coffee",
+                "code": "IBC",
+                "sizes": [{
+                        "name": "medium",
+                        "code": "MD",
+                        "price": 84
+                    },
+                    {
+                        "name": "large",
+                        "code": "LG",
+                        "price": 109
+                    }
+                ]
+            },
+            {
+                "isAvailable": true,
+                "name": "Iced Vanilla Coffee",
+                "code": "IVC",
+                "sizes": [{
+                        "name": "medium",
+                        "code": "MD",
+                        "price": 99
+                    },
+                    {
+                        "name": "large",
+                        "code": "LG",
+                        "price": 120
+                    }
+                ]
+            },
+            {
+                "isAvailable": true,
+                "name": "Ice Mocha Coffee",
+                "code": "IMC",
+                "sizes": [{
+                        "name": "medium",
+                        "code": "MD",
+                        "price": 99
+                    },
+                    {
+                        "name": "large",
+                        "code": "LG",
+                        "price": 120
+                    }
+                ]
+            },
+            {
+                "isAvailable": true,
+                "name": "Roast Coffee",
+                "code": "RC",
+                "sizes": [{
+                    "name": "cup",
+                    "code": "CP",
+                    "price": 65
+                }]
+            }
+        ]
+    },
+
+
+    {
+        "category": "Meals",
+        "contents": [{
+                "isAvailable": true,
+                "name": "BLT Chicken King (spicy flavor) Solo",
+                "code": "BLTCKSPCYML",
+                "price": 322
+            },
+            {
+                "isAvailable": true,
+                "name": "BLT Chicken King (spicy flavor) Solo",
+                "code": "BLTCKSPCYSOLO",
+                "price": 253
+            },
+            {
+                "isAvailable": true,
+                "name": "Truffle Whopper (Junior) Combo",
+                "code": "TRFLJRCMB",
+                "price": 265
+            },
+            {
+                "isAvailable": true,
+                "name": "Truffle Whopper (Junior) Solo",
+                "code": "TRFLJRSOLO",
+                "price": 179
+            },
+            {
+                "isAvailable": true,
+                "name": "Truffle Whopper Combo",
+                "code": "TRFLCMB",
+                "price": 391
+            },
+            {
+                "isAvailable": true,
+                "name": "Truffle Whopper Solo",
+                "code": "TRFLSOLO",
+                "price": 314
+            },
+            {
+                "isAvailable": true,
+                "name": "1PC Chunky Chicken Fillet Creamy Parm Combo",
+                "code": "1CKPARMCMB",
+                "price": 125
+            },
+            {
+                "isAvailable": true,
+                "name": "1PC Chunky Chicken Fillet Creamy Parm Solo",
+                "code": "1CKPARMSOLO",
+                "price": 105
+            },
+            {
+                "isAvailable": true,
+                "name": "2PCS Chunky Chicken Fillet Creamy Parm Combo",
+                "code": "2CKPARMCMB",
+                "price": 175
+            },
+            {
+                "isAvailable": true,
+                "name": "2PCS Chunky Chicken Fillet Creamy Parm Solo",
+                "code": "2CKPARMSOLO",
+                "price": 155
+            },
+            {
+                "isAvailable": true,
+                "name": "Chicken Chunky Fillet (1 PC) with Rice",
+                "code": "CK1WRC",
+                "price": 105
+            },
+            {
+                "isAvailable": true,
+                "name": "Chicken Chunky Fillet (2 PCS) with Rice",
+                "code": "CK2WRC",
+                "price": 170
+            },
+            {
+                "isAvailable": true,
+                "name": "Chicken Chunky Fillet (2 PCS) with Rice + Drink",
+                "code": "CK2CMBRC",
+                "price": 172
+            }
+        ]
+    },
+    {
+        "category": "Whopper",
+        "contents": [{
+                "isAvailable": true,
+                "name": "Pepperoni Bacon Whopper – Jr Solo",
+                "code": "PBWJRNSOLO",
+                "price": 261
+            },
+            {
+                "isAvailable": true,
+                "name": "Pepperoni Bacon Whopper Jr Meal",
+                "code": "PBWJRNCMB",
+                "price": 333
+            },
+            {
+                "isAvailable": true,
+                "name": "Pepperoni Bacon Whopper Solo",
+                "code": "PBWLGSOLO",
+                "price": 428
+            },
+            {
+                "isAvailable": true,
+                "name": "Pepperoni Bacon Whopper Meal",
+                "code": "PBWLGCMB",
+                "price": 499
+            },
+            {
+                "isAvailable": true,
+                "name": "Whopper Junior",
+                "code": "WHJRNR",
+                "price": 93
+            },
+            {
+                "isAvailable": true,
+                "name": "Whopper Junior Combo",
+                "code": "WHJRNRCMB",
+                "price": 205
+            },
+            {
+                "isAvailable": true,
+                "name": "Whopper Meal",
+                "code": "WHMRL",
+                "price": 314
+            },
+            {
+                "isAvailable": true,
+                "name": "Whopper Solo",
+                "code": "WHWPRSOLO",
+                "price": 246
+            },
+            {
+                "isAvailable": true,
+                "name": "4 Layered Cheese Whopper",
+                "code": "4LCW",
+                "price": 312
+            },
+            {
+                "isAvailable": true,
+                "name": "4 Layered Cheese Whopper Meal Combo",
+                "code": "4LCWMC",
+                "price": 370
+            },
+            {
+                "isAvailable": true,
+                "name": "4 Layers of Cheese – Whopper Junior",
+                "code": "4LCWJ",
+                "price": 136
+            },
+            {
+                "isAvailable": true,
+                "name": "4 Layers of Cheese – Whopper Junior Meal",
+                "code": "4LCWJM",
+                "price": 214
+            },
+            {
+                "isAvailable": true,
+                "name": "Bacon 4-Cheese Whopper",
+                "code": "B4CW",
+                "price": 449
+            },
+            {
+                "isAvailable": true,
+                "name": "Bacon 4-Cheese Whopper Meal Combo",
+                "code": "B4CWMC",
+                "price": 518
+            },
+            {
+                "isAvailable": true,
+                "name": "Junior Bacon 4-Cheese Whopper",
+                "code": "JB4CW",
+                "price": 281
+            },
+            {
+                "isAvailable": true,
+                "name": "Junior Bacon 4-Cheese Whopper Combo",
+                "code": "JB4CWCOMBO",
+                "price": 359
+            }
+        ]
+    }, {
+        "category": "Flame-grilled",
+        "contents": [{
+                "isAvailable": true,
+                "name": "BBQ Bacon Cheese Burger Solo",
+                "code": "BBQBCHEESEBURGER1",
+                "price": 249
+            },
+            {
+                "isAvailable": true,
+                "name": "BBQ Bacon Cheese Burger Combo ",
+                "code": "BBQBCHEESEBURGERCMB",
+                "price": 329
+            },
+            {
+                "isAvailable": true,
+                "name": "Double BBQ Bacon cheeseburger Combo",
+                "code": "DBBQBCHEESEBURGERCMB",
+                "price": 440
+            },
+            {
+                "isAvailable": true,
+                "name": "Double BBQ Bacon cheeseburger Solo",
+                "code": "DBBQBCHEESEBURGERSOLO",
+                "price": 374
+            },
+            {
+                "isAvailable": true,
+                "name": "Hamburger Meal",
+                "code": "HAMBRGRMEAL",
+                "price": 170
+            },
+            {
+                "isAvailable": true,
+                "name": "Solo Hamburger",
+                "code": "SOLOHAMBRGR",
+                "price": 101
+            },
+            {
+                "isAvailable": true,
+                "name": "Barbeque Hamburger Meal",
+                "code": "BBQHAMBRGRMEAL",
+                "price": 150
+            },
+            {
+                "isAvailable": true,
+                "name": "Solo Barbeque Hamburger",
+                "code": "SOLOBBQHAMBRGR",
+                "price": 89
+            },
+            {
+                "isAvailable": true,
+                "name": "Quarter Pound King Meal Combo",
+                "code": "QTRPNDKINGMEALCMB",
+                "price": 398
+            },
+            {
+                "isAvailable": true,
+                "name": "Quarter Pound King Solo",
+                "code": "QTRPNDKINGSOLO",
+                "price": 330
+            },
+            {
+                "isAvailable": true,
+                "name": "Double Quarter Pound King Meal Combo",
+                "code": "DQTRPNDKINGMEALCMB",
+                "price": 551
+            },
+            {
+                "isAvailable": true,
+                "name": "Double Quarter Pound King Meal",
+                "code": "DQTRPNDKINGMEAL1",
+                "price": 483
+            },
+            {
+                "isAvailable": true,
+                "name": "Regular Cheese Burger Flame Grilled Meal",
+                "code": "REGCHEESEBURGERFLAMECMB",
+                "price": 165
+            },
+            {
+                "isAvailable": true,
+                "name": "Regular Cheese Burger Flame Grilled Solo",
+                "code": "REGCHEESEBURGERFLAMESOLO",
+                "price": 89
+            },
+            {
+                "isAvailable": true,
+                "name": "Double Cheese Burger Flame Grilled Meal",
+                "code": "DBLRCHEESEBURGERFLAMECMB",
+                "price": 404
+            },
+            {
+                "isAvailable": true,
+                "name": "Double Cheese Burger Flame Grilled Solo",
+                "code": "DBLRCHEESEBURGERFLAMESOLO",
+                "price": 350
+            },
+            {
+                "isAvailable": true,
+                "name": "Triple Cheese Burger Flame Grilled Combo",
+                "code": "TRIPLECHEESEBURGERFLAMECMB",
+                "price": 422
+            },
+            {
+                "isAvailable": true,
+                "name": "Triple Cheese Burger Flame Grilled Solo",
+                "code": "TRIPLECHEESEBURGERFLAMESOLO",
+                "price": 381
+            },
+            {
+                "isAvailable": true,
+                "name": "Flame Grilled Quadrupled Cheese Burger Solo",
+                "code": "FLAMEGRILLEDQUADCHEESEBURGER1",
+                "price": 477
+            },
+            {
+                "isAvailable": true,
+                "name": "Flame Grilled Quadrupled Cheese Burger Combo",
+                "code": "FLAMEGRILLEDQUADCHEESEBURGERCMB",
+                "price": 545
+            }
+        ]
+    }
+
+
+]
+
