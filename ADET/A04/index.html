@@ -38,7 +38,7 @@
         <div class="row">
           <div class="col">
             <div class="card overflow-auto maincontainer">
-              <div class="d-flex flex-start justify-content-sm-start justify-content-center flex-row flex-wrap" id="maincontainer">
+              <div class="d-flex flex-start justify-content-sm-start justify-content-center flex-row flex-wrap main-card" id="maincontainer">
 
               </div>
             </div>
@@ -94,7 +94,7 @@
             products[categoryIndex].contents.forEach(content => {
                 content.sizes.forEach(size => {
                     maincontainer.innerHTML += `
-                        <div onclick="addToReceipt(${size.price}, '${content.code + size.code}')" class="card mx-1 my-2 custom-button content p-3 ms-4 text-center">
+                        <div onclick="addToReceipt(${size.price}, '${content.code + size.code}')" class="card mx-1 my-2 custom-button content p-3 ms-4 text-center" style="background-color: ${content.color};" >
                             <small>${content.name} ${size.code}</small>
                         </div>
                     `;
@@ -103,7 +103,7 @@
         } else {
             products[categoryIndex].contents.forEach(content => {
                 maincontainer.innerHTML += `
-                    <div onclick="addToReceipt(${content.price}, '${content.code}')" class="card mx-1 my-2 custom-button content p-3 ms-3 text-center">
+                    <div onclick="addToReceipt(${content.price}, '${content.code}')" class="card mx-1 my-2 custom-button content p-3 ms-3 text-center" style="background-color: ${content.color};">
                         <small>${content.name}</small>
                     </div>
                 `;

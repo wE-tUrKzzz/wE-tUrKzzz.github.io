@@ -17,7 +17,7 @@ body {
 
 .custom-button {
     width: 80dvh;
-    max-width: 500px;
+    max-width: 300px;
     font-size: 3.5vh;
 }
 
@@ -57,6 +57,10 @@ body {
     height: 75dvh;
     background-color: #EFDABD;
     font-family: 'Regular', sans-serif;
+    color: #EFDABD;
+}
+.main-card{
+    color: #EFDABD;
 }
 
 .receiptcontainer {
