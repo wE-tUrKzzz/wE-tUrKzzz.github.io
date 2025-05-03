@@ -48,9 +48,7 @@ body {
 
 .categories .card {
     color: #502314;
-    ;
     background-color: #ed7902;
-
 }
 
 .maincontainer {
@@ -61,13 +59,19 @@ body {
 }
 .main-card{
     color: #EFDABD;
+    min-height: 400px;
 }
 
 .receiptcontainer {
+    height: 75dvh;
     background-color: #EFDABD;
     font-family: 'Regular', sans-serif;
-    color: #512315;
+    color: #512315;  
 }
+#receipt {
+    font-size: 1.2rem; 
+  }
+
 
 .topcontainer {
     scrollbar-width: auto;
