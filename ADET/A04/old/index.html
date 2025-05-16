@@ -33,7 +33,7 @@
       </div>
     </div>
 
-    <div class="row mt-3 mb-5">
+    <div class="row mt-3 mb-5 pb-3">
       <div class="col-12 col-md-9 mb-3 mb-md-0">
         <div class="card overflow-auto maincontainer">
           <div class="d-flex flex-start justify-content-sm-start justify-content-center align-content-around flex-row flex-wrap main-card"
@@ -92,7 +92,7 @@
         products[categoryIndex].contents.forEach(content => {
           content.sizes.forEach(size => {
             maincontainer.innerHTML += `
-                        <div onclick="addToReceipt(${size.price}, '${content.code + size.code}')" class="card mx-1 my-2 custom-button content p-3 ms-4 text-center" style="background-color: ${content.color};" >
+                        <div onclick="addToReceipt(${size.price}, '${content.code + size.code}')" class="card mx-1 my-2 custom-button content p-3 ms-5 text-center" style="background-color: ${content.color};" >
                             <small>${content.name} ${size.code}</small>
                         </div>
                     `;
@@ -101,7 +101,7 @@
       } else {
         products[categoryIndex].contents.forEach(content => {
           maincontainer.innerHTML += `
-                    <div onclick="addToReceipt(${content.price}, '${content.code}')" class="card mx-1 my-2 custom-button content p-3 ms-3 text-center" style="background-color: ${content.color};">
+                    <div onclick="addToReceipt(${content.price}, '${content.code}')" class="card mx-1 my-2 custom-button content p-3 ms-5 text-center" style="background-color: ${content.color};">
                         <small>${content.name}</small>
                     </div>
                 `;
