@@ -1,0 +1,9 @@
+body{
+    background-color: #141517;
+}
+.navshadow {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.7);
+  }
+.logo{
+    height: 4rem;
+}
