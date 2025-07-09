@@ -1,9 +1,89 @@
+@font-face {
+    font-family: "Kick";
+    src: url(dir/font/kick-font.ttf);
+}
+@font-face {
+    font-family: "Inter";
+    src: url(dir/font/Inter_18pt-Regular.ttf);
+}
+
 body{
+    color: #E3E0E0;
     background-color: #141517;
 }
-.navshadow {
+
+.title{
+    color: #4EE04E;
+    font-family: "Kick";
+    font-size: 1.5rem;
+}
+
+.content{
+    color: #E3E0E0;
+    font-family: "Inter";
+    font-size: 1.25rem;
+}
+
+.navShadow {
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.7);
   }
+
 .logo{
-    height: 4rem;
+    height: 4.5rem;
+}
+
+.cardContainer1{
+   gap: 7rem;
+   flex-wrap: wrap;
+}
+
+.heroCard{
+    background-color: #222222;
+    border-color: #41B541;
+    border-radius: 10px;
+    border-width: medium;
+    max-width: 50rem;
+}
+
+.profileCard{
+    width: 320px;         
+    height: 320px;
+    border-radius: 50%;   
+    overflow: hidden; 
+    background-color: #222222;
+    border-color: #41B541;    
+    border-width: thick;
+    object-fit: cover;
+}
+
+.btnResume{
+    color: #41B541;
+    background-color: #222222;
+    border-color: #41B541; 
+    border-radius: 10px;   
+    border-width: medium;
+    font-family: "Kick";
+    font-size: 1.5rem;
+    padding: 0px 50px 0px;
+    --bs-btn-hover-color: #E3E0E0;
+    --bs-btn-hover-border-color: #41B541;
+    --bs-btn-active-color:#41B541;
+    --bs-btn-active-border-color: #41B541;
+
+}
+
+.contactCard{
+    background-color: #222222;
+    border-color: #41B541;
+    border-radius: 10px;
+    border-width: medium;
+    max-width: 80rem;
+    min-height: 10rem;
+}
+
+
+@media (min-width: 768px) {
+    .heroCard {
+        width: 50rem;
+    }
 }
