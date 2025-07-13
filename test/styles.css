@@ -12,6 +12,10 @@ body{
     background-color: #141517;
 }
 
+.pageMargin{
+    margin-top: 16rem;
+}
+
 .title{
     color: #4EE04E;
     font-family: "Kick";
