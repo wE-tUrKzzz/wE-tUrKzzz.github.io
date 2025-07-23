@@ -1,114 +1,146 @@
 @font-face {
-    font-family: "Kick";
-    src: url(dir/font/kick-font.ttf);
+  font-family: "Kick";
+  src: url(dir/font/kick-font.ttf);
 }
 @font-face {
-    font-family: "Inter";
-    src: url(dir/font/Inter_18pt-Regular.ttf);
+  font-family: "Inter";
+  src: url(dir/font/Inter_18pt-Regular.ttf);
 }
 
-body{
-    color: #E3E0E0;
-    background-color: #141517;
+body {
+  color: #e3e0e0;
+  background-color: #141517;
 }
 
-.pageMargin-lg{
-    margin-top: 22rem !important;
+.pageMargin-lg {
+  margin-top: 22rem !important;
 }
 
-.pageMargin-sm{
-    margin-top: 10rem !important;
+.pageMargin-sm {
+  margin-top: 10rem !important;
 }
 
-.landing-lg{
-    font-size: 5.75rem !important;
+
+.landing-lg {
+  font-size: 5.75rem !important;
 }
 
-.landing-sm{
-    font-size: 2.5em !important;
+.landing-sm {
+  font-size: 2.5em !important;
 }
 
-.title{
-    color: #4EE04E;
-    font-family: "Kick";
-    font-size: 1.75rem;
+.title {
+  color: #4ee04e;
+  font-family: "Kick";
+  font-size: 1.75rem;
 }
 
-.content{
-    color: #E3E0E0;
-    font-family: "Inter";
-    font-size: 1.5rem;
+.content {
+  color: #e3e0e0;
+  font-family: "Inter";
+  font-size: 1.5rem;
 }
 
 .navShadow {
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.7);
-  }
-
-.logo{
-    height: 4.5rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.7);
 }
 
-.cardContainer1{
-   gap: 7rem;
-   flex-wrap: wrap;
+.logo {
+  height: 4.5rem;
 }
 
-.fitCard{
-    background-color: #222222;
-    border-color: #41B541;
-    border-radius: 10px;
-    border-width: medium;
-    max-width: 50rem;
-    width: fit-content;
+.cardContainer1 {
+  gap: 7rem;
+  flex-wrap: wrap;
 }
 
-.heroCard{
-    background-color: #222222;
-    border-color: #41B541;
-    border-radius: 10px;
-    border-width: medium;
-    max-width: 50rem;
+.fitCard {
+  background-color: #222222;
+  border-color: #41b541;
+  border-radius: 10px;
+  border-width: medium;
+  max-width: 50rem;
+  width: fit-content;
 }
 
-.profileCard{
-    width: 320px;         
-    height: 320px;
-    border-radius: 50%;   
-    overflow: hidden; 
-    background-color: #222222;
-    border-color: #41B541;    
-    border-width: thick;
-    object-fit: cover;
+.heroCard {
+  background-color: #222222;
+  border-color: #41b541;
+  border-radius: 10px;
+  border-width: medium;
+  max-width: 50rem;
 }
 
-.btnResume{
-    color: #41B541;
-    background-color: #222222;
-    border-color: #41B541; 
-    border-radius: 10px;   
-    border-width: medium;
-    font-family: "Kick";
-    font-size: 1.5rem;
-    padding: 0px 50px 0px;
-    --bs-btn-hover-color: #E3E0E0;
-    --bs-btn-hover-border-color: #41B541;
-    --bs-btn-active-color:#41B541;
-    --bs-btn-active-border-color: #41B541;
-
+.profileCard {
+  width: 320px;
+  height: 320px;
+  border-radius: 50%;
+  overflow: hidden;
+  background-color: #222222;
+  border-color: #41b541;
+  border-width: thick;
+  object-fit: cover;
 }
 
-.longCard{
-    background-color: #222222;
-    border-color: #41B541;
-    border-radius: 10px;
-    border-width: medium;
-    max-width: 80rem;
-    min-height: 10rem;
+.projectCard {
+  background-color: #222222;
+  border-color: #41b541;
+  border-radius: 10px;
+  border-width: medium;
+  max-width: 50rem;
+  min-width: 20rem;
+  width: fit-content;
 }
 
+.btnGreen {
+  color: #41b541;
+  background-color: #222222;
+  border-color: #41b541;
+  border-radius: 10px;
+  border-width: medium;
+  font-family: "Kick";
+  font-size: 1.5rem;
+  padding: 0px 50px 0px;
+  --bs-btn-hover-color: #e3e0e0;
+  --bs-btn-hover-border-color: #41b541;
+  --bs-btn-active-color: #41b541;
+  --bs-btn-active-border-color: #41b541;
+}
+
+.longCard {
+  background-color: #222222;
+  border-color: #41b541;
+  border-radius: 10px;
+  border-width: medium;
+  max-width: 80rem;
+  min-height: 10rem;
+}
+
+.previewCard {
+  background-color: #222222;
+  border-color: #41b541;
+  border-radius: 10px;
+  border-width: medium;
+  max-width: 50rem;
+  width: 100%;
+}
+
+.site-preview {
+  position: relative;
+  width: 100%;
+  min-height: 60vh;
+  overflow: hidden;
+}
+
+.site-frame {
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  border: none;
+}
 
 @media (min-width: 768px) {
-    .heroCard {
-        width: 50rem;
-    }
+  .heroCard {
+    width: 50rem;
+  }
 }
