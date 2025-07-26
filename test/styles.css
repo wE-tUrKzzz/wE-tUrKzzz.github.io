@@ -20,7 +20,6 @@ body {
   margin-top: 10rem !important;
 }
 
-
 .landing-lg {
   font-size: 5.75rem !important;
 }
@@ -92,21 +91,6 @@ body {
   width: fit-content;
 }
 
-.btnGreen {
-  color: #41b541;
-  background-color: #222222;
-  border-color: #41b541;
-  border-radius: 10px;
-  border-width: medium;
-  font-family: "Kick";
-  font-size: 1.5rem;
-  padding: 0px 50px 0px;
-  --bs-btn-hover-color: #e3e0e0;
-  --bs-btn-hover-border-color: #41b541;
-  --bs-btn-active-color: #41b541;
-  --bs-btn-active-border-color: #41b541;
-}
-
 .longCard {
   background-color: #222222;
   border-color: #41b541;
@@ -125,18 +109,39 @@ body {
   width: 100%;
 }
 
+.btnGreen {
+  color: #41b541;
+  background-color: #222222;
+  border-color: #41b541;
+  border-radius: 10px;
+  border-width: medium;
+  font-family: "Kick";
+  font-size: 1.5rem;
+  padding: 0px 50px 0px;
+  --bs-btn-hover-color: #e3e0e0;
+  --bs-btn-hover-border-color: #41b541;
+  --bs-btn-active-color: #41b541;
+  --bs-btn-active-border-color: #41b541;
+}
+
+
 .site-preview {
   position: relative;
   width: 100%;
   min-height: 60vh;
   overflow: hidden;
+  
 }
 
 .site-frame {
   width: 100%;
   height: 100%;
-  pointer-events: none;
   border: none;
+  overflow: auto;
+}
+
+.site-frame::-webkit-scrollbar {
+  display: none;
 }
 
 @media (min-width: 768px) {
