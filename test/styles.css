@@ -1,151 +1,36 @@
 @font-face {
-  font-family: "Kick";
-  src: url(dir/font/kick-font.ttf);
-}
-@font-face {
-  font-family: "Inter";
-  src: url(dir/font/Inter_18pt-Regular.ttf);
+  font-family: 'Arial MT Bold';
+  src: url(dir/font/arialroundedmtbold.ttf);
 }
 
-body {
-  color: #e3e0e0;
-  background-color: #141517;
-}
-
-.pageMargin-lg {
-  margin-top: 22rem !important;
-}
-
-.pageMargin-sm {
-  margin-top: 10rem !important;
-}
-
-.landing-lg {
-  font-size: 5.75rem !important;
-}
-
-.landing-sm {
-  font-size: 2.5em !important;
-}
-
-.title {
-  color: #4ee04e;
-  font-family: "Kick";
-  font-size: 1.75rem;
-}
-
-.content {
-  color: #e3e0e0;
-  font-family: "Inter";
-  font-size: 1.5rem;
-}
-
-.navShadow {
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.7);
-}
-
-.logo {
-  height: 4.5rem;
-}
-
-.cardContainer1 {
-  gap: 7rem;
-  flex-wrap: wrap;
-}
-
-.fitCard {
-  background-color: #222222;
-  border-color: #41b541;
-  border-radius: 10px;
-  border-width: medium;
-  max-width: 50rem;
-  width: fit-content;
-}
-
-.heroCard {
-  background-color: #222222;
-  border-color: #41b541;
-  border-radius: 10px;
-  border-width: medium;
-  max-width: 50rem;
-}
-
-.profileCard {
-  width: 320px;
-  height: 320px;
-  border-radius: 50%;
-  overflow: hidden;
-  background-color: #222222;
-  border-color: #41b541;
-  border-width: thick;
-  object-fit: cover;
-}
-
-.projectCard {
-  background-color: #222222;
-  border-color: #41b541;
-  border-radius: 10px;
-  border-width: medium;
-  max-width: 50rem;
-  min-width: 20rem;
-  width: fit-content;
-}
-
-.longCard {
-  background-color: #222222;
-  border-color: #41b541;
-  border-radius: 10px;
-  border-width: medium;
-  max-width: 80rem;
-  min-height: 10rem;
-}
-
-.previewCard {
-  background-color: #222222;
-  border-color: #41b541;
-  border-radius: 10px;
-  border-width: medium;
-  max-width: 50rem;
-  width: 100%;
-}
-
-.btnGreen {
-  color: #41b541;
-  background-color: #222222;
-  border-color: #41b541;
-  border-radius: 10px;
-  border-width: medium;
-  font-family: "Kick";
-  font-size: 1.5rem;
-  padding: 0px 50px 0px;
-  --bs-btn-hover-color: #e3e0e0;
-  --bs-btn-hover-border-color: #41b541;
-  --bs-btn-active-color: #41b541;
-  --bs-btn-active-border-color: #41b541;
-}
-
-
-.site-preview {
-  position: relative;
-  width: 100%;
-  min-height: 60vh;
-  overflow: hidden;
-  
-}
-
-.site-frame {
-  width: 100%;
+html, body {
   height: 100%;
-  border: none;
-  overflow: auto;
+  margin: 0;
+  font-family: 'Arial MT Bold';
+}
+body{
+  background: linear-gradient(to right, #FFEFEF, #5CBA71 );
 }
 
-.site-frame::-webkit-scrollbar {
-  display: none;
+.navbar{
+ margin-top: 2rem;
 }
 
-@media (min-width: 768px) {
-  .heroCard {
-    width: 50rem;
-  }
+.navbar-nav {
+  font-size: 1.2rem;
+  flex-direction: row; 
+  display: flex;
+  gap: 4rem;
+  margin-left: auto;
+}
+
+.connect {
+  display: inline-block;
+  background-color: #8EFEA2;
+  border-radius: 0.7rem;
+  padding: 0.5rem;
+  min-width: 120px;
+  text-align: center;
+  font-weight: 700;
+  box-shadow: 7px 5px 4px rgba(0, 0, 0, 0.25);    
 }
