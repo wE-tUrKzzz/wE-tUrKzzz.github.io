@@ -3,17 +3,30 @@
   src: url(dir/font/arialroundedmtbold.ttf);
 }
 
+@font-face {
+  font-family: 'Arial MT';
+  src: url(dir/font/Arial\ Rounded\ MT\ Regular.ttf);
+}
+
+@font-face{
+  font-family: 'Kick';
+  src: url(dir/font/kick-font.ttf) format('truetype');
+}
+
+
 html, body {
   height: 100%;
   margin: 0;
-  font-family: 'Arial MT Bold';
+  font-family: 'Arial MT Regular';
 }
+
 body{
   background: linear-gradient(to right, #FFEFEF, #5CBA71 );
 }
 
 .navbar{
  margin-top: 2rem;
+ font-family: 'Arial MT Bold';
 }
 
 .navbar-nav {
@@ -24,7 +37,7 @@ body{
   margin-left: auto;
 }
 
-.connect {
+.grnbtn {
   display: inline-block;
   background-color: #8EFEA2;
   border-radius: 0.7rem;
@@ -32,5 +45,58 @@ body{
   min-width: 120px;
   text-align: center;
   font-weight: 700;
-  box-shadow: 7px 5px 4px rgba(0, 0, 0, 0.25);    
+  box-shadow: 7px 5px 4px rgba(0, 0, 0, 0.25);
+  font-family: 'Arial MT Bold';   
+}
+
+.text-block {
+  max-width: 420px;  
+  text-align: justify;
+}
+
+.content a {
+  text-decoration: none;
+  color: inherit;
+}
+
+
+.col-md-6 {
+  margin-top: 5rem;
+}
+
+.col-md-6 a {
+  display: block;
+}
+
+.name, .alias{
+  font-family: 'Kick';
+  color:#42794D !important;
+}
+
+.name{
+  font-size: 3rem;
+}
+
+.alias{
+  font-size: 1.5rem;
+}
+
+.tagline{
+  font-size: 1.3rem;;
+}
+
+.tagline2{
+  font-family: 'Arial MT Bold';
+  font-size: 1.5rem;;
+}
+
+
+@media (max-width: 767.98px){
+  .col-md-6{
+    margin-top: 3rem;
+  }
+
+  .profile{
+    margin-top: 2rem;
+  }
 }
