@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>WITO | Portfolio </title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link href="styles.css" rel="stylesheet">
+    <link rel="Icon" type="image/png" href="dir/img/logo.svg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="split-wrapper">
+        <div class="split left animate__animated animate__slideOutLeft"></div>
+        <div class="split right animate__animated animate__slideOutRight"></div>
+    </div>
+    
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container-fluid">
+            <a class="navbar-brand ms-4" href="index.html">
+                <img src="dir/img/logo.svg" class="logo" height="40" alt="Logo">
+            </a>
+            <ul class="navbar-nav me-3">
+                <li class="nav-item">
+                    <a class="nav-link" href="portfolio.html">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link grnbtn" href="#" data-bs-toggle="modal" data-bs-target="#connectModal">
+                        Connect
+                    </a>
+                </li>
+            </ul>
+        </div>
+        </div>
+    </nav>
+
+    <!-- Body -->
+    <div class="container-fluid">
+        <div class="content row justify-content-center">
+            <div class="col-5 mt-5 mb-5">
+                <div class="shadow-lg mt-5 rounded-5">
+                    <div class="card animate__animated animate__fadeIn border-success border-3 rounded-5 overflow-hidden">
+                        <a href="https://saisydcafe.com/" target="_blank" class="text-decoration-none">
+                            <img src="dir/portfolio/Saiysd Cafe.png" class="card-img-top">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="content row justify-content-center">
+            <div class="col-5 mb-5">
+                <div class="shadow-lg mt-5 rounded-5">
+                    <div class="card animate__animated animate__fadeIn border-success border-3 rounded-5 overflow-hidden">
+                        <a href="portfolio/Project 5/index.html" target="_blank" class="text-decoration-none">
+                            <img src="dir/portfolio/Unison.png" class="card-img-top">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="content row justify-content-center">
+            <div class="col-5 mb-5">
+                <div class="shadow-lg mt-5 rounded-5">
+                    <div class="card animate__animated animate__fadeIn border-success border-3 rounded-5 overflow-hidden">
+                        <a href="portfolio/Project 2/index.html" target="_blank" class="text-decoration-none">
+                            <img src="dir/portfolio/Baguio.png" class="card-img-top">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal container -->
+    <div class="modal fade" id="connectModal" tabindex="-1" aria-hidden="true" data-bs-backdrop="static"
+        data-bs-keyboard="false">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content text-white" style="border-radius: 20px;">
+
+                <div class="modal-header border-0">
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                </div>
+
+                <!-- Modal body (external content loaded here) -->
+                <div class="modal-body" id="connectModalContent"></div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous">
+    </script>
+    <script>
+        const connectModal = document.getElementById('connectModal');
+        connectModal.addEventListener('show.bs.modal', () => {
+            const contentDiv = document.getElementById('connectModalContent');
+            // Load external file
+            fetch('connect.html')
+                .then(response => response.text())
+                .then(html => {
+                    contentDiv.innerHTML = html;
+                })
+                .catch(err => {
+                    contentDiv.innerHTML = '<p class="text-center text-danger">Failed to load content.</p>';
+                    console.error(err);
+                });
+        });
+    </script>
+
+</body>
+
+</html>
