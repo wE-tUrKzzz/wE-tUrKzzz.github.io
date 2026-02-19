@@ -18,7 +18,7 @@ html, body {
   height: 100%;
   margin: 0;
   font-family: 'Arial MT Regular';
-  overflow-x: hidden;
+  
 }
 
 body{
@@ -30,7 +30,6 @@ body{
   inset: 0;
   z-index: 9999;
   pointer-events: none;
-  overflow: hidden;
 }
 
 .split {
@@ -151,6 +150,10 @@ body{
 
 .modal-content{
   background-color: #0e350b;
+}
+
+.portfolio{
+  margin-top: 400px;
 }
 
 
