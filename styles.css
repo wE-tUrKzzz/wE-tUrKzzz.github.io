@@ -17,12 +17,29 @@
 html, body {
   height: 100%;
   margin: 0;
+  scroll-behavior: smooth;
   font-family: 'Arial MT Regular';
   
 }
 
-body{
-  background: linear-gradient(to right, #FFEFEF, #5CBA71 );
+body {
+  background: linear-gradient(-45deg, #efefef, #5CBA71, #E8F5EC, #5CBA71);
+  background-size: 400% 400%;
+  animation: gradientMove 12s ease infinite;
+  overflow-x: hidden;
+  min-height: 100vh;
+}
+
+@keyframes gradientMove {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
 .split-wrapper {
@@ -133,6 +150,13 @@ body{
   font-size: 1rem;;
 }
 
+.profile {
+  transition: transform 0.7s cubic-bezier(0.22, 1, 0.36, 1) !important;
+}
+
+.profile:hover {
+  transform: scale(1.03) !important;
+}
 
 .card-img-top{
   height: 220px; 
@@ -155,6 +179,9 @@ body{
 .portfolio{
   margin-top: 400px;
 }
+
+
+
 
 
 
