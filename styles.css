@@ -14,22 +14,26 @@
 }
 
 
-html,
+html {
+  min-height: 100%;
+}
+
 body {
-  height: 100%;
   margin: 0;
   scroll-behavior: smooth;
   font-family: 'Arial MT Regular';
 
-}
-
-body {
+  /* Animated gradient */
   background: linear-gradient(-45deg, #efefef, #5CBA71, #E8F5EC, #5CBA71);
   background-size: 400% 400%;
   animation: gradientMove 12s ease infinite;
   overflow-x: hidden;
+
+  /* Keeps gradient covering the full page while scrolling */
+  background-attachment: fixed;
   min-height: 100vh;
 }
+
 
 @keyframes gradientMove {
   0% {
@@ -200,10 +204,26 @@ body {
   background-color: #0e350b;
 }
 
-.portfolio {
+.title-section {
   margin-top: 400px;
 }
 
+.tech-column{
+  background:#479a41;
+  padding:20px;
+  border-radius:20px;
+  margin:10px;
+  box-shadow:0 4px 10px rgba(0,0,0,0.1);
+}
+
+.icons{
+  height:40px;
+  margin:10px;
+}
+
+.icons:hover{
+  transform:scale(1.15);
+}
 
 @media (max-width: 768px) {
   .col-md-6 {

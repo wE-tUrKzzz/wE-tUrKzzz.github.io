@@ -42,7 +42,7 @@
 
     <!-- Body -->
     <div class="container-fluid">
-        <div class="content row align-items-center text-center">
+        <div class="content row align-items-center text-center mb-5">
 
             <!-- Left Column -->
             <div class="col-md-6">
@@ -50,15 +50,13 @@
                     <a class="name animate__animated animate__fadeInDown">LOUIS SANTOS</a>
                     <a class="alias  animate__animated animate__fadeInDown">or wE_tUrKzzz</a>
                     <a class="tagline2 mt-2 animate__animated animate__fadeInDown">A Developer | Designer | Creator</a>
-                    <a class="tagline2 animate__animated animate__fadeInDown">Proficient in HTML/CSS | PHP | JS</a>
-
                     <a class="tagline mt-2 animate__animated animate__fadeInDown animate__delay-1s">Let’s Plan, Talk,
                         and
                         Develop.</a>
                     <div class="d-flex gap-3 mt-3 mx-auto">
                         <a class="btn btn-lg grnbtn w-50 animate__animated animate__fadeInDown animate__delay-1s"
                             href="https://drive.google.com/file/d/10ZLUg_OVi_uS_A_zspIBC-_Gh8izPWOS/view?usp=sharing"
-                            role="button">My CV/Resume</a>
+                            role="button" target="_blank">My CV/Resume</a>
                         <a class="btn btn-lg grnbtn w-50 animate__animated animate__fadeInDown animate__delay-1s"
                             href="#" role="button" data-bs-toggle="modal" data-bs-target="#connectModal">Let's Start</a>
                     </div>
@@ -75,12 +73,67 @@
         </div>
     </div>|
 
+
+    <div class="title-section text-center" id="portfolio">
+        <p class="wow animate__fadeInDown name mb-5">PROFICIENT IN :</p>
+    </div>
+    <div class="container">
+        <div class="wow animate__fadeInDown content row align-items-center text-center">
+
+            <!-- Column 1 -->
+            <div class="col-md-4">
+                <div class="tech-column">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" class="icons">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg"
+                        class="icons">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
+                        class="icons">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" class="icons">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+                        class="icons">
+                </div>
+            </div>
+
+            <!-- Column 2 -->
+            <div class="col-md-4">
+                <div class="tech-column">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg"
+                        class="icons">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
+                        class="icons">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" class="icons">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/canva/canva-original.svg"
+                        class="icons">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/aftereffects/aftereffects-original.svg"
+                        class="icons">
+                </div>
+            </div>
+
+            <!-- Column 3 -->
+            <div class="col-md-4">
+                <div class="tech-column">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/illustrator/illustrator-plain.svg"
+                        class="icons">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/photoshop/photoshop-plain.svg"
+                        class="icons">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg"
+                        class="icons">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg"
+                        class="icons">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/visualstudio/visualstudio-plain.svg"
+                        class="icons">
+                </div>
+            </div>
+
+        </div>
+    </div>
+
     <!-- Portfolio -->
 
-    <div class="portfolio text-center" id="portfolio">
+    <div class="title-section text-center" id="portfolio">
         <p class="wow animate__fadeInDown name">PORTFOLIO</p>
     </div>
-    <div class="container-fluid">
+    <div class="container-fluid" style="margin-bottom: 400px;">
         <div class="content row justify-content-center">
             <div class="col-5 mt-5 mb-5">
                 <div class="shadow-lg mt-5 rounded-5">
@@ -153,7 +206,8 @@
                     contentDiv.innerHTML = html;
                 })
                 .catch(err => {
-                    contentDiv.innerHTML = '<p class="text-center text-danger">Failed to load content.</p>';
+                    contentDiv.innerHTML =
+                        '<p class="text-center text-danger">Failed to load content.</p>';
                     console.error(err);
                 });
         });
