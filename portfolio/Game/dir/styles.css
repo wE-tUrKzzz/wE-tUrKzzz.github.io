@@ -1,0 +1,76 @@
+body{
+    font-family: Arial;
+    margin:0;
+    background:#111;
+    color:white;
+    }
+    
+    header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px;
+    background:#000;
+    }
+    
+    nav a{
+    margin-left:20px;
+    text-decoration:none;
+    color:white;
+    }
+    
+    .hero{
+    height:80vh;
+    background:url("img/game-bg.jpg") center/cover;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    }
+    
+    .hero h2{
+    font-size:50px;
+    }
+    
+    button{
+    padding:12px 25px;
+    border:none;
+    background:#ff4444;
+    color:white;
+    cursor:pointer;
+    }
+    
+    section{
+    padding:60px 20px;
+    text-align:center;
+    }
+    
+    .features{
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    }
+    
+    .feature-box{
+    background:#222;
+    padding:20px;
+    width:200px;
+    border-radius:10px;
+    }
+    
+    .gallery{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    }
+    
+    .gallery img{
+    width:250px;
+    border-radius:10px;
+    }
+    
+    footer{
+    text-align:center;
+    padding:20px;
+    background:#000;
+    }

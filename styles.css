@@ -186,6 +186,31 @@ body {
   transform: scale(1.03);
 }
 
+.portfolio-box {
+  min-height: 200px;
+  height: auto;
+  border: 2px solid #85B78F;
+  border-radius: 12px;
+  background: #B0D6B2;
+}
+
+.portfolio-icon {
+  width: 80px;     
+  height: 80px;
+  object-fit: contain;
+}
+
+.left-content{
+  flex: 0 0 110px;      
+}
+
+.right-content{
+  flex: 1;            
+  min-width: 0;         
+  overflow-wrap: break-word;
+}
+
+
 .card-img-top {
   width: 100%;
   aspect-ratio: 16 / 7;
@@ -205,7 +230,6 @@ body {
   position: relative;
   display: block;
 }
-
 
 .overlay {
   position: absolute;
