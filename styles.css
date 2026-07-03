@@ -154,10 +154,15 @@ body {
   ;
 }
 
-.tagline2 {
+.alias2 {
   font-family: 'Arial MT Bold';
+}
+
+.tagline2 {
   font-size: 1rem;
-  ;
+}
+.servicetext {
+  font-size: 1.25rem;
 }
 
 .float-wrapper {
@@ -189,16 +194,33 @@ body {
 .portfolio-box {
   min-height: 200px;
   height: auto;
-  border: 2px solid #85B78F;
-  border-radius: 12px;
+  border: 6px solid #85B78F;
+  border-radius: 16px;
   background: #B0D6B2;
+  transition: transform 0.2s ease;
+}
+
+.portfolio-box:hover {
+  transform: scale(1.02);
 }
 
 .portfolio-icon {
-  width: 80px;     
-  height: 80px;
+  width: 100px;
+  aspect-ratio: 1;
   object-fit: contain;
 }
+
+.portfolio-icon {
+  transition: transform 0.15s ease;
+}
+
+.portfolio-icon:hover {
+  transform: scale(1.05);
+}
+
+/* .floating {
+  animation: float 2s ease-in-out infinite;
+} */
 
 .left-content{
   flex: 0 0 110px;      
