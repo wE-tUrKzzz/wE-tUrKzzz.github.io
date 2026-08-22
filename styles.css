@@ -183,6 +183,34 @@ body {
   }
 }
 
+@keyframes floatSoft {
+  0% {
+      transform: translateY(0);
+  }
+
+  50% {
+      transform: translateY(-5px);
+  }
+
+  100% {
+      transform: translateY(0);
+  }
+}
+
+@keyframes floatHigh {
+  0% {
+      transform: translateY(0);
+  }
+
+  50% {
+      transform: translateY(-10px);
+  }
+
+  100% {
+      transform: translateY(0);
+  }
+}
+
 .profile {
   transition: transform 0.7s cubic-bezier(0.22, 1, 0.36, 1);
 }
@@ -218,9 +246,17 @@ body {
   transform: scale(1.05);
 }
 
-/* .floating {
+.floating {
   animation: float 2s ease-in-out infinite;
-} */
+}
+
+.floating2 {
+  animation: floatSoft 3s ease-in-out infinite;
+}
+
+.floating3 {
+  animation: floatHigh 4s ease-in-out infinite;
+}
 
 .left-content{
   flex: 0 0 110px;      
@@ -305,12 +341,45 @@ body {
   transform:scale(1.15);
 }
 
-@media (max-width: 768px) {
+@media (max-width: 800px) {
   .col-md-6 {
     margin-top: 3rem;
   }
 
   .profile {
     margin-top: 4rem;
+  }
+
+  .portfolio-box {
+    padding: 15px;
+}
+.portfolio-box .d-flex {
+    gap: 15px !important;
+}
+
+.left-content {
+    flex: 0 0 35%;
+}
+
+.right-content {
+    flex: 1;
+    min-width: 0;
+}
+
+.servicetext {
+    margin: 0.5rem !important;
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+
+.portfolio-icon {
+    max-width: 70px;
+    height: auto;
+}
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .servicetext {
+      font-size: 0.8rem;
   }
 }
