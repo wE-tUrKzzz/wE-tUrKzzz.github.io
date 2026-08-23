@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+
+.regular {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: clamp(16px, 2vw, 24px);
+}
+
+.medium {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+}
+
+body {
+    margin: 0;
+    scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif;
+
+    /* Animated gradient */
+    background: linear-gradient(-45deg, #FFFBF2, #8f724d, #f0e2d0, #945300);
+    background-size: 400% 400%;
+    animation: gradientMove 12s ease infinite;
+    overflow-x: hidden;
+
+    /* Keeps gradient covering the full page while scrolling */
+    background-attachment: fixed;
+    min-height: 100vh;
+}
+
+
+@keyframes gradientMove {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #8f724d;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #765d3f;
+}
+
+.title{
+    color: #2E1A00;
+    font-size: clamp(2rem, 5vw, 5rem);
+}
+
+.card.card1{
+    background-color: #C4A277;
+    border: none;
+    border-radius: 20px;
+}
+
+.logo2{
+    width: 400px;
+    max-width: 100%;
+    height: auto;
+}
+
+.brnbtn{
+    background-color: #945300 !important;
+    color:#FFFBF2 !important;
+    font-size: clamp(2rem, 3vw, 2rem) !important;
+    border-radius: 20px !important;
+    padding: 0 20px;
+}
+
+.margin-sec{
+    margin: 9rem 0;
+}
+
+
+.line {
+    height: 2px;
+    flex: 1;
+    background-color: #FFFBF2;
+}
