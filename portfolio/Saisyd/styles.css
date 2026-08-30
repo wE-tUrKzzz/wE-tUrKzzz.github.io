@@ -88,9 +88,37 @@ body {
     margin: 9rem 0;
 }
 
-
 .line {
     height: 2px;
     flex: 1;
     background-color: #FFFBF2;
+}
+
+.color-img {
+    width: 250px;
+    max-width: 100%;
+    min-width: 100px;
+    height: auto;
+}
+
+.color-box {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    margin-right: 5px;
+    border: 1px solid #999;
+    vertical-align: middle;
+}
+
+.gradient-box {
+    background: linear-gradient(to bottom, #FFFBF2, #945300);
+}
+
+
+@media (max-width: 576px) {
+    .logo2 {
+        width: 250px;
+        margin-top: 100px;
+    }
+   
 }
