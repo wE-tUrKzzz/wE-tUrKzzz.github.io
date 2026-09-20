@@ -60,14 +60,20 @@ body {
 }
 
 .title{
-    color: #2E1A00;
+    color: #FFFBF2;
     font-size: clamp(2rem, 5vw, 5rem);
 }
 
 .card.card1{
     background-color: #C4A277;
     border: none;
-    border-radius: 20px;
+    border-radius: 15px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+    
+}
+
+.card-body {
+    color: #FFFBF2;
 }
 
 .logo2{
@@ -112,6 +118,11 @@ body {
 
 .gradient-box {
     background: linear-gradient(to bottom, #FFFBF2, #945300);
+}
+
+.carousel {
+    max-width: 1000px;
+    margin: 0 auto 50px;
 }
 
 
