@@ -7,6 +7,7 @@
     justify-content: center;
     overflow: hidden;
     margin: 0 auto;
+    margin-bottom: 5vh;
 }
 
 .centered-carousel-wrapper {
@@ -144,6 +145,17 @@
     background: #2e1a00;
     color: #fff;
 }
+
+.carousel-btn span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 1;
+    transform: translateY(-4px);
+}
+
+
+
 
 .carousel-btn:hover {
     transform: translateY(-50%) scale(1.08);

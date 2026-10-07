@@ -82,12 +82,13 @@ body {
     height: auto;
 }
 
-.brnbtn{
+.brnbtn {
     background-color: #945300 !important;
-    color:#FFFBF2 !important;
-    font-size: clamp(2rem, 3vw, 2rem) !important;
-    border-radius: 20px !important;
-    padding: 0 20px;
+    color: #FFFBF2 !important;
+    font-size: clamp(1rem, 2vw, 1.5rem) !important;
+    border-radius: 10px !important;
+    padding: 10px 20px;
+    white-space: nowrap;
 }
 
 .margin-sec{
